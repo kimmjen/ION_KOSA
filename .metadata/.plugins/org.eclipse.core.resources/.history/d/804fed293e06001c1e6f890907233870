@@ -1,0 +1,22 @@
+package ex06.break_continue;
+
+public class MultiBreak {
+	public static void main(String[] args) {
+		boolean flag = true;
+		
+		first: {
+			second: {
+				third: {
+					int k = 100;
+					System.out.println();
+					
+					if ()
+						System.out.println();
+				}// third end
+				System.out.println();
+			}// seconde end
+			System.out.println();
+		}// first end
+		System.out.println();
+	}
+}

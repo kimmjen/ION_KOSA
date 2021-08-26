@@ -24,28 +24,15 @@ public class Q_IF {
 //		int avg = (x+y+z)/3;
 		double avg = (x+y+z)/3.0;
 		
+	
 		if (avg >= 60) {
-			if (x >= 40 && y >= 40 && z >= 40) {
-				System.out.printf("모든 과목이 40점 이상이며, " + "평균이 %.2f로 합격입니다.", avg);
-			} else {
-				System.out.printf("평균은 %.2f이지만, ", avg);
-				if(x < 40) System.out.print("전산 : " + x + " 점");
-				if(y < 40) System.out.print("영어 : " + y + " 점");
-				if(z < 40) System.out.print("국어 : " + z + " 점");
-				System.out.printf("으로 [과목 탈락] 입니다.");
-			}
+			System.out.println("합격");
 		} else {
-			System.out.printf("평균이 %.2f로 [평균 미달 탈락] 입니다", avg);
+			System.out.println("불합격");
+			if ((x<= 40) && (y <= 40) && (z <= 40)) {
+				System.out.println("과락 과목 : " + "전산 :" + x + "영어 :" + y + "국어 :" + z);
+			}
 		}
-		
 	}
 	
 }
-//		if (avg >= 60) {
-//			System.out.println("합격");
-//		} else {
-//			System.out.println("불합격");
-//			if ((x<= 40) && (y <= 40) && (z <= 40)) {
-//				System.out.println("과락 과목 : " + "전산 :" + x + "영어 :" + y + "국어 :" + z);
-//			}
-//		}

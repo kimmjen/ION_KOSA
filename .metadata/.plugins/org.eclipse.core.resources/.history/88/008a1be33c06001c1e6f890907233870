@@ -1,0 +1,8 @@
+package Quiz;
+/*1. 원하는 단을 입력 받아서 구구단 출력
+ * 
+ * 2. 전체 구구단 출력
+ * */
+public class Q_For {
+
+}

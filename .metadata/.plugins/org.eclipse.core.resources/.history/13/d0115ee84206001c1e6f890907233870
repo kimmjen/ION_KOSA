@@ -1,0 +1,22 @@
+package home;
+
+import java.util.Scanner;
+
+public class home {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String name = sc.next();
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		int z = sc.nextInt();
+		int total = (x + y+ z);
+		double avg = (x + y+ z) /3;
+		
+		System.out.println(name +" 님의 성적표*********");
+		System.out.println("국어 : " + x + "전산 : " + y +"영어 : " + z);
+		System.out.println("총점 : " + );
+		
+	}
+
+}

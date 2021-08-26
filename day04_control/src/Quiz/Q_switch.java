@@ -5,44 +5,42 @@ import java.util.Scanner;
 public class Q_switch {
 
 	public static void main(String[] args) {
-		// 사칙 연산 프로그램 작성 = 연산자 1개, 정수숫자 2개
-		Scanner sc = new Scanner(System.in);
+		System.out.print("전산 과목 점수를 입력해주세요 : ");
+		int com = new Scanner(System.in).nextInt();
 		
+		System.out.print("영어 과목 점수를 입력해주세요 : ");
+		int eng = new Scanner(System.in).nextInt();
 		
-		System.out.println("등호 선택 ( +, - , *, /) 중 하나를 선택");
-//		String n = sc.next();
-//		char op = sc.next().charAt(0);
-		String op = sc.next();
+		System.out.print("국어 과목 점수를 입력해주세요 : ");
+		int kor = new Scanner(System.in).nextInt();
 		
-//		System.out.println("두 번째 수: ");
-//		System.out.println("첫 번째 수: ");
-		System.out.println("정수 2개 입력 : ");
-		int x = sc.nextInt();
-		int y = sc.nextInt();
-		
-		int result = 0;
-		
-		
-//		if (op == '+') result = x + y;
-//		if (op == '-') result = x + y;
-//		if (op == '*') result = x + y;
-//		if (op == '/') result = x + y;
-//		
-//		System.out.println("\n\n");
-//		System.out.println(x + " " + op + " " + y + " = " + result);
-//		
-		
-		switch (op) {
-			case "+": result = x + y; break;
-			case "-": result = x + y; break;
-			case "*": result = x + y; break;
-			case "/": result = x + y; break;
+		double avg = (com + eng + kor) / 3.0;
+		switch((com + eng + kor) / 30) {
+		case 10: 		case 9:		case 8:		case 7:
+		case 6:
+			if (com > 40 && eng > 40 && kor > 40)
+				System.out.printf("평균이 %.2f점으로 합격입니다.\n", avg );
+			else {
+					if (com <= 40) 
+						System.out.println("전산 과목이 " + com +"점으로 40점을 넘지 못하였습니다.");
+					if (eng <= 40)
+						System.out.println("영어 과목이 " + eng +"점으로 40점을 넘지 못하였습니다.");
+					if (kor <= 40)
+						System.out.println("국어 과목이  " + kor +"점으로 40점을 넘지 못하였습니다.");
+					System.out.printf("평균은 %.2f점입니다.\n", avg );
+					System.out.println("불합격");
+			}
+			break;
 		default:
-			System.out.println();
-			System.exit(0);
+			if (com <= 40) 
+				System.out.println("전산 과목이 " + com +"점으로 40점을 넘지 못하였습니다.");
+			if (eng <= 40)
+				System.out.println("영어 과목이 " + eng +"점으로 40점을 넘지 못하였습니다.");
+			if (kor <= 40)
+				System.out.println("국어 과목이  " + kor +"점으로 40점을 넘지 못하였습니다.");
+			System.out.printf("평균은 %.2f점입니다.\n", avg );
+			System.out.println("불합격");
+			break;
 		}
-		System.out.println("\n\n");
-		System.out.println(x + " " + op + " " + y + " = = " + result);
 	}
-
 }
