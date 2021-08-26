@@ -1,0 +1,19 @@
+package ex02.IF;
+
+import java.util.Scanner;
+
+public class MainEntry {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in); // 객체 생성, 메모리 할당, 생성자 함수 자동 호출
+		
+		System.out.println("String input : ");
+		String str = sc.next();
+		String msg = sc.nextLine();
+		
+//		System.out.println(str);
+		System.out.println("string next() is : " + str);
+		System.out.println("string nextLine() is : " + msg);
+	}
+}

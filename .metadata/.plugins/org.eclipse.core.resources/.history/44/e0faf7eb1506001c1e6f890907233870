@@ -1,0 +1,46 @@
+package Quiz;
+
+import java.util.Scanner;
+
+public class Q_switch {
+
+	public static void main(String[] args) {
+		// 사칙 연산 프로그램 작성 = 연산자 1개, 정수숫자 2개
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.println("등호 선택 ( +, - , *, /) 중 하나를 선택");
+//		String n = sc.next();
+//		char op = sc.next().charAt(0);
+		string op = sc.next();
+		
+//		System.out.println("두 번째 수: ");
+//		System.out.println("첫 번째 수: ");
+		System.out.println("정수 2개 입력 : ");
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		
+		int result = 0;
+		
+		
+//		if (op == '+') result = x + y;
+//		if (op == '-') result = x + y;
+//		if (op == '*') result = x + y;
+//		if (op == '/') result = x + y;
+//		
+//		System.out.println("\n\n");
+//		System.out.println(x + " " + op + " " + y + " = " + result);
+//		
+		
+		switch (op) {
+		case "+": result = x + y; break;
+		case "-": result = x + y; break;
+		case "*": result = x + y; break;
+		case "/": result = x + y; break;
+		default:
+			System.out.println();
+			System.exit(0);
+		}
+	}
+
+}

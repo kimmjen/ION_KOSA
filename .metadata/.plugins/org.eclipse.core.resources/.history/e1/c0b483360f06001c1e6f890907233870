@@ -1,0 +1,21 @@
+package ex03.Switch;
+
+import java.util.Scanner;
+/* 문제 윤녕/평년 판정 프로그램 작성
+ * */
+public class MainEntry {
+
+	public static void main(String[] args) {
+		
+		System.out.println("숫자 입력 = ");
+		int num = new Scanner(System.in).nextInt(); // 객체 생성, 메모리 할당, 생성자 함수 자동 호출
+		
+		String msg = null;
+		
+		if (num % 2 == 0) {
+			msg = "even";
+		} else {
+			msg = "odd";
+		}
+	}
+}

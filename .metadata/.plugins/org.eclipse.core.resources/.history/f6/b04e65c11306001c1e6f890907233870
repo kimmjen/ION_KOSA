@@ -1,0 +1,35 @@
+package Quiz;
+
+import java.util.Scanner;
+
+public class Q_switch {
+
+	public static void main(String[] args) {
+		// 사칙 연산 프로그램 작성 = 연산자 1개, 정수숫자 2개
+		Scanner sc = new Scanner(System.in);
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		String n = sc.next();
+		int value = sc.nextInt();
+
+		switch (n) {
+		case "+":
+			value = x + y;
+			break;
+		case "-":
+			value = x - y;
+			break;
+		case "*":
+			value = x * y;
+			break;
+		case "/":
+			value = x / y;
+			break;
+
+		default:
+			break;
+		}
+
+	}
+
+}

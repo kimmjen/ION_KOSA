@@ -1,0 +1,27 @@
+package ex03.Switch;
+
+import java.util.Scanner;
+/* 문제 윤녕/평년 판정 프로그램 작성
+ * */
+public class MainEntry {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("1, 2, 3 중 하나를 선택하세요. : ");
+		
+		int point = sc.nextInt(); // 문자열 중에서 첫 글자 한글자만 추출함
+		
+		switch (point) {
+			case 1:  System.out.print("집"); break;
+			case 2:  System.out.print("집"); break;
+			case 3:  System.out.print("집"); break;
+			
+		default:
+			System.out.println("잘못 눌렀습니다. s, d, b, j 중에서만 선ㅌ택");
+			System.exit(0);
+		}
+		System.out.println("를(을) 선택 하셨습니다.");
+	}
+}
+

@@ -1,0 +1,11 @@
+package ex03.Switch;
+
+import java.util.Scanner;
+/* 문제 윤녕/평년 판정 프로그램 작성
+ * */
+public class MainEntry {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+}

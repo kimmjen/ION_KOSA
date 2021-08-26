@@ -1,0 +1,10 @@
+package Quiz;
+
+public class Q_switch {
+
+	public static void main(String[] args) {
+		// 사칙 연산 프로그램 작성 = 연산자 1개, 정수숫자 2개
+
+	}
+
+}
