@@ -1,0 +1,8 @@
+package day03_basic.ex01.Quiz;
+
+public class Snippet {
+	public static void main(String[] args) {
+		Q_1
+	}
+}
+

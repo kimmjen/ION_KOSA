@@ -1,0 +1,185 @@
+>> day03 -21/08/25
+
+  > DataType
+
+ > Operator 
+   - 우선 순위 있음
+      최단산쉬관논삼대콤
+ 높<--                    --> 낮
+
+ > 제어문
+  1) 비교문
+      if ~ else
+
+과제1] 3개 정수 입력 받아서 큰 순서대로 출력하는 프로그램 작성
+ x = 3
+ y = 4
+ z = 5
+
+  result>
+    5 > 4 > 3 
+
+과제2] 연산자(+, -, *, /)와 정수 2개 입력 받아 사칙연산 프로그램 작성
+
+> 입력받기 - Scanner class  jdk 5.0
+   java.io <--- Input  / Output
+
+   nextXXX()
+        자료형
+   nextInt()
+   nextFloat()
+   nextDouble()
+   next() vs nextLine()  <--- String input method
+
+문제2] 다음을 입력 받아서 출력하는 프로그램 작성
+  이름, 국어, 영어, 전산 점수 입력 받아서
+  총점, 평균 까지 출력하는
+
+ result>
+  이도연님의 성적표 *****
+  국어 : 100, 영어: 100, 전산 : 100
+  총점 : 300, 평균: 100.00 
+
+  문제3] 자료형에 맞춰서 선언하고 값 출력하는 프로그램 작성
+   이름 String 
+   나이 int
+   키 또는 몸무게 실수형
+
+  2) 선택문
+      switch ~ case
+  3) 반복문
+      for
+      while
+      do ~ while
+  4) 기타구문
+      break
+      continue
+
+ > Exception (예외처리)
+  Java는 의무적(반드시)으로 예외처리를 해야하는 상황들이 있음.
+    -- 네트워크, 데이터베이스(JDBC), Thread, IO(입출력), File,..
+   
+   1) try ~ catch : 직접처리 - 권장
+   2) throws : 위임
+   3) throw : 예외 던지기 
+ 
+  문제1] 사칙연산 프로그램 작성(예외처리하기)
+  숫자 2개 입력 받고, 연산자(+, -, *, /) 1개 입력 받아서
+  ( if 이용 ) 
+
+   
+  result> 
+    3
+    5
+    +
+
+   3 + 5 = 8
+
+  
+
+===================================
+>> day02 -21/08/24
+
+ 1) JDK 설치 및 실행
+  https://www.oracle.com/kr/java/technologies/javase/javase-jdk8-downloads.html
+  -> Windows x64
+
+   JDK : 개발 + 실행
+
+   JRE : java로 개발된 소스 실행
+
+ > 환경변수 설정
+  - JAVA_HOME
+    C:\Program Files\Java\jdk1.8.0_301
+
+  - CLASSPATH
+   .;
+
+  - Path 편집
+    %JAVA_HOME%\bin
+
+ 2) 간단 프로그램 작성
+
+ class Hello {
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+		System.out.println(100);
+		System.out.println(12.34);
+		System.out.print("\nhappydoyeon\n\n\n");
+		System.out.printf("%d %c %s %s %f", 30, 'A', "A", "string", 55.789);
+	} // main end
+} // class end
+
+  > 컴파일
+  D:\I-ON\1_Java\workspace>javac Hello.java
+  > 실행
+  D:\I-ON\1_Java\workspace>java Hello
+
+ > 출력함수
+  print()  - 개행없이 출력 
+  printf() - 서식에 맞춰서 출력
+               %문자 - %c, %s, %d or %i, %f, %o, %0x, %0X....
+  println() - 출력 및 개행 
+
+
+ > API 보는 방법
+ https://docs.oracle.com/javase/8/docs/api
+
+  package > class > method > field
+
+ window 폴더 : C:\java_web_app_developer\1_Java\workspace
+ D:\I-ON\1_Java\workspace\day03_basic\src\ex01\dataType
+
+  java package : C:.java_web_app_developer.1_Java.workspace
+ D:.I-ON.1_Java.workspace.day03_basic.src.ex01.dataType
+
+ > STS download ( IDE )
+ https://spring.io/   <----- spring boot 만 있기에  spring framework MVC 
+
+ menu : Help > Eclipse Markplace -> Add on 또는 sts 기재하면 >
+  	Spring Tools 3 Add-On for Spring Tools 4 3.9.18.CI > install button click ==> spring
+
+ menu : Help > install New Software > work with -> 
+		https://download.eclipse.org/releases/2020-12  > Add ==> Web
+
+ > DataType 
+
+ > 메모리 구조
+
+===================================
+ >> 유용한 사이트
+ http://tcpschool.com/
+
+ - 용어
+ http://www.terms.co.kr/
+ https://ko.wikipedia.org
+
+ http://www.etnews.com/
+
+ https://www.codeproject.com
+
+> 동영상 강좌 & 문제 은행
+ https://cafe.naver.com/thisisjava
+ https://cafe.naver.com/javachobostudy
+ https://www.orentec.co.kr/
+ - 신입SW인력을 위한 실전 자바(Java)
+https://www.youtube.com/playlist?list=PLieE0qnqO2kTyzAlsvxzoulHVISvO8zA9
+ https://www.opentutorials.org/course/1223
+ http://www.easyspub.co.kr/50_Menu/VideoView/534/PUB#view
+
+--------------------------------------
+> 강사컴 공유
+ \\192.168.3.166   24-F5-AA-E9-B4-DE
+ \\desktop-th36tt5
+ http://192.168.3.166
+
+ java/java
+ ion/ion
+
+---------------------------------------------------
+>> 이도연(영희)
+ happydoyeon88@gmail.com
+ 010-9872-0202
+
+
+ 

@@ -1,0 +1,21 @@
+package day03_basic.Quiz;
+
+import java.util.Scanner;
+
+public class Q_2 {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("x: ");
+		int x = sc.nextInt();
+		System.out.println("y: ");
+		int y = sc.nextInt();
+		System.out.println("z: ");
+		int z = sc.nextInt();
+		
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+	}
+}

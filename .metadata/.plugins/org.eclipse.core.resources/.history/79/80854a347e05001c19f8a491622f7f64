@@ -1,0 +1,23 @@
+package day03_basic.Quiz;
+
+import java.util.Scanner;
+
+public class Q_4 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("국어: ");
+		int x = sc.nextInt();
+		
+		System.out.println("영어: ");
+		int y = sc.nextInt();		
+		
+		System.out.println("전산: ");
+		int z = sc.nextInt();
+		
+		
+		float div = (x+y+z)/3;
+		System.out.println( "총점 : " + (x+y+z) + ", " + "평균 : " + "%f" + div);
+	}
+
+}

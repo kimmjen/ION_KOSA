@@ -1,0 +1,24 @@
+package day03_basic.ex01.operator;
+
+public class OperatorTest {
+	public static void main(String[] args) {
+		
+		// 단항 연산
+		
+		int x = 10, y;
+		
+		int y1 = x++; // 대입먼저(후입연산), 증감 나중
+		int y2= ++x; // 후입
+		int y3 = --x;
+		int y4 = x--;
+		
+		System.out.println(x + "," +y1);
+		System.out.println(x + "," +y2);
+		System.out.println(x + "," +y3);
+		System.out.println(x + "," +y4);
+		
+		
+	}
+
+}
+

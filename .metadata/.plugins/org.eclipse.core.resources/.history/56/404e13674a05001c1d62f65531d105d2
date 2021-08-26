@@ -1,0 +1,14 @@
+package day03_basic.ex01.operator;
+
+public class OperatorTest {
+	public static void main(String[] args) {
+		int result = 3 + 4 *5;
+		
+		System.out.println(result);
+		
+		result2 = (3+4) *5;
+		
+		System.out.println(result2);
+	}
+
+}

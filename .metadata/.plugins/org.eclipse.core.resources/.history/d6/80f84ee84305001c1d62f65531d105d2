@@ -1,0 +1,23 @@
+package day03_basic.ex01.dataType;
+
+public class MainEntry {
+	public static void main(String[] args) {
+		
+		int x = 9;
+		long y = 8;
+		
+		System.out.println(x); // 4byte 정수데이터
+		System.out.println(100); // int
+		System.out.println(y); // 8byte long 데이터
+		
+		short sh = 100; // -32,768 ~ 32,767
+		int iNum = 50000; // -21억 ~ 21억
+		int iiNum = -32768;
+		
+		System.out.println(sh);
+		System.out.println(iNum);
+		System.out.println(iiNum);
+		
+		
+	}
+}

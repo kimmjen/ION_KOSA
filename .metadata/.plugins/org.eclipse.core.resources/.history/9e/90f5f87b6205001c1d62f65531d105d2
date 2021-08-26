@@ -1,0 +1,11 @@
+package day03_basic.ex02.operator;
+
+public class OperatorTest5 {
+	public static void main(String[] args) {
+		
+		// 삼항 조건 연산자: (조건) ? 참 : 거짓;
+		
+	}
+
+}
+

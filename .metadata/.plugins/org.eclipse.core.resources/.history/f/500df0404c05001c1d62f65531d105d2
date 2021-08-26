@@ -1,0 +1,37 @@
+package day03_basic.ex01.Quiz;
+
+public class Q_1 {
+
+	public static void main(String[] args) {
+		int pay = 567890;
+		
+		System.out.println("만원" + ": " +  pay / 10000 + "장");
+		System.out.println("천원" + ": " +  (pay % 10000)/1000 + "장");
+		System.out.println("백원" + ": " +  ((pay % 10000)%1000)/100 + "개");
+		System.out.println("십원" + ": " +  (((pay % 10000)%1000)%100)/10 + "개");
+		
+		/*
+		 *  int pay = 567890;
+			int a = pay / 10000;
+			pay %= 10000;
+			int b = pay / 1000;
+			pay %= 1000;
+			int c = pay / 100;
+			int d = pay % 100 / 10;
+			
+			System.out.printf("만원: %d장 \n천원: %d장 \n백원: %d개 \n십원: %d개", a, b, c, d);
+
+		 * */
+		System.out.println("만원 : " + pay/10000 + "장");
+		pay %= 10000;
+		System.out.println("천원 : " + pay/1000 + "장");
+		pay %= 1000;
+		System.out.println("백원 : " + pay/100 + "개");
+		pay %= 100;
+		System.out.println("만원 : " + pay/10 + "개");
+
+	}
+	// 만원 56장, 천원 7장, 백원 8개, 십원 9개
+//	int pay = 567890;
+	
+}

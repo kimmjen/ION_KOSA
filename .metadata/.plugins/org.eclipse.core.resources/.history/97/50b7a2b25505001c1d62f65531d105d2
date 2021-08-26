@@ -1,0 +1,27 @@
+package day03_basic.ex02.operator;
+
+public class OperatorTest4 {
+	public static void main(String[] args) {
+		
+		// 관계연산자: < > <= >= == !=
+		// 0, 0.0, null을 제외한 모든 것은 참이다.
+		
+		if (4 < 7) {
+			System.out.println("크다");
+		} else {
+			System.out.println("작다");
+		}
+		
+		if (3 >= 3) {
+			System.out.println("참");
+		} else {
+			System.out.println("거짓");
+		}
+		
+		// 논리연산자 : 2진 논리 ==> 결과: 값, 10진논리 => T,F
+		
+		
+	}
+
+}
+

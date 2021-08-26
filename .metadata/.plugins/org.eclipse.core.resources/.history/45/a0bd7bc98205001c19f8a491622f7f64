@@ -1,0 +1,16 @@
+package day03_basic.Quiz;
+
+public class Q_5 {
+	public static void main(String[] args) {
+		String name;
+		int age;
+		double height;
+		double weight;
+		
+//		System.out.println(name.getClass().getName());
+//		System.out.println(age.getName());
+//		System.out.println(height.getClass().getName());
+//		System.out.println(weight.getClass().getName());
+
+	}
+}

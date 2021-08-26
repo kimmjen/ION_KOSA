@@ -1,0 +1,13 @@
+package day03_basic.ex01.dataType;
+
+public class MainEntry {
+	public static void main(String[] args) {
+		
+		int x = 9;
+		long y = 8;
+		
+		System.out.println(x); // 4byte 정수데이터
+		System.out.println(100); // int
+		System.out.println(y); // 8byte long 데이터
+	}
+}

@@ -1,0 +1,16 @@
+package day03_basic.Quiz;
+
+public class Q_5 {
+	public static void main(String[] args) {
+		String name = "김제민";
+		int age = 30;
+		double height = 171;
+		double weight = 86;
+		
+		System.out.println(name);
+		System.out.println(age);
+		System.out.println(height);
+		System.out.println(weight);
+
+	}
+}
