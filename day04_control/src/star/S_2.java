@@ -5,6 +5,7 @@ public class S_2 {
         for (int i = 1; i < 6; i++) {
             for (int j = 6; i < j; j--) {
                 System.out.print("*");
+//            	System.out.print(i+j);
             }
             System.out.println();
         }
