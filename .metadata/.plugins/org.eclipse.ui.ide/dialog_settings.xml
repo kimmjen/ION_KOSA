@@ -58,7 +58,7 @@
 		<item value="org.eclipse.jst.ws.axis2tools.feature:1.1.401.v201909051708"/>
 		<item value="org.eclipse.jst.ws.cxf.feature:1.1.700.v202011292043"/>
 		<item value="org.eclipse.jst.ws.jaxws.feature:1.2.700.v202011292043"/>
-		<item value="org.eclipse.justj.openjdk.hotspot.jre.full:16.0.2.v20210721-1149"/>
+		<item value="org.eclipse.justj.openjdk.hotspot.jre.full:15.0.1.v20201027-0507"/>
 		<item value="org.eclipse.m2e.feature:1.18.1.20210618-2246"/>
 		<item value="org.eclipse.m2e.logback.feature:1.17.1.20210603-1006"/>
 		<item value="org.eclipse.m2e.wtp.feature:1.4.4.20201128-1705"/>
@@ -114,4 +114,18 @@
 		<item value="org.springframework.ide.eclipse.webflow.feature:3.9.18.202108161408-CI-B2817"/>
 		<item value="org.springframework.ide.eclipse.xml.namespaces.feature:4.11.1.202108151956"/>
 	</list>
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode/&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<item key="ShowDerived" value="false"/>
+		<item key="FilterByLocation" value="false"/>
+		<item key="WorkingSet" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="187"/>
+			<item key="DIALOG_Y_ORIGIN" value="190"/>
+			<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+		</section>
+	</section>
 </section>

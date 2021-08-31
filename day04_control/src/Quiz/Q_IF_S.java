@@ -35,7 +35,7 @@ public class Q_IF_S {
 					System.out.println("eng과목 " + eng + "점으로, 불합격입니다.");
 					
 				} else if (kor <= 40) {
-					System.out.println("kor과목 " + kor + "1점으로, 불합격입니다.");	
+					System.out.println("kor과목 " + kor + "점으로, 불합격입니다.");	
 		}
 	}
 }
