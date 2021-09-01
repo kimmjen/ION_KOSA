@@ -1223,6 +1223,7 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
 
+<<<<<<< Updated upstream
 !ENTRY org.eclipse.jdt.ui 4 10001 2021-08-31 17:52:51.696
 !MESSAGE Internal Error
 !STACK 0
@@ -1236,3 +1237,19 @@ org.eclipse.jface.text.BadLocationException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+=======
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-27 15:21:17.304
+!MESSAGE executing callback sts4.classpath.dGDzuILm SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-27 17:32:02.807
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.dGDzuILm
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-27 17:32:02.807
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.dGDzuILm
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-27 17:32:02.807
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-27 17:32:02.808
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.dGDzuILm => OK
+>>>>>>> Stashed changes
