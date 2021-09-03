@@ -41,6 +41,7 @@ public class VertorEx01 {
 			System.out.println(v2.get(i));
 		}
 		
+		// 리턴되는 타입이 정수형 데이터
 		System.out.println("----- elementsAt() method -----");
 		for (int i = 0; i < v2.size(); i++) {
 			Integer num = v2.elementAt(i);
