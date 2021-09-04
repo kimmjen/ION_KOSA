@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=C\:\\workspace\\ION_KOSA\\.git;
-GitRepositoriesView.GitDirectories.relative=.git;
+GitRepositoriesView.GitDirectories=C\:\\ION_workspace\\ION_KOSA\\.git;C\:\\ION_workspace\\vue_spring\\.git;
+GitRepositoriesView.GitDirectories.relative=.git;C\:\\ION_workspace\\vue_spring\\.git;
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1

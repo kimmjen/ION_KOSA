@@ -5,7 +5,20 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2021-09-02T17:02:00Z</updated>
+  <updated>2021-09-02T23:00:00Z</updated>
+  <entry>
+    <title>A Bootiful Podcast: SpringOne 2021 and Jackson and Woodstox creator Tatu Saloranta</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/09/02/a-bootiful-podcast-springone-2021-and-jackson-and-woodstox-creator-tatu-saloranta" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-09-03:4532</id>
+    <updated>2021-09-02T23:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, &lt;a href="http://twitter.com/starbuxman"&gt;Josh Long (@starbuxman )&lt;/a&gt; breathlessly recaps some of the exciting news from the just-finished SpringOne 2021 event and then talks to Jackson and Woodstox creator &lt;a href="http://twitter.com/"&gt;Tatu Saloranta (@cowtowncoder)&lt;/a&gt;&lt;/p&gt;
+&lt;iframe title="SpringOne 2021 and Tatu Saloranta" allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=k8gh5-10ce9fe-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;btn-skin=7"&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>A Java 17 and Jakarta EE 9 baseline for Spring Framework 6</title>
     <link rel="alternate" href="https://spring.io/blog/2021/09/02/a-java-17-and-jakarta-ee-9-baseline-for-spring-framework-6" />
@@ -564,19 +577,6 @@ class ServiceConfiguration {&#xD;
   &lt;li&gt;&lt;a href="https://redmonk.com/sogrady/2021/08/05/language-rankings-6-21/"&gt;The RedMonk Programming Language Rankings: June 2021&lt;/a&gt; has a lot of good news for Java developers. Check it out!&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://twitter.com/tlberglund/status/1422950723222794243?s=21"&gt;Everybody, the completely rebooted Confluent Developer portal is now live!&lt;/a&gt; There are tons of great resources for Spring and Kafka developers.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>A Bootiful Podcast: Microsoft's Sean Li on Azure, Spring Boot, Azure Spring Cloud, Spring integrations and more</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/08/05/a-bootiful-podcast-microsoft-s-sean-li-on-azure-spring-boot-azure-spring-cloud-spring-integrations-and-more" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2021-08-06:4512</id>
-    <updated>2021-08-05T16:30:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment Josh Long talks to Microsoft&amp;rsquo;s Sean Li on Azure, Spring Boot, Azure Spring Cloud, Spring integrations and more. &lt;/p&gt;
-&lt;iframe title="Microsoft's Sean Li on Azure, Spring Boot, Azure Spring Cloud, Spring integrations and more" allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=pxbzn-10a9dcd-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=auto&amp;btn-skin=7"&gt;&lt;/iframe&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
