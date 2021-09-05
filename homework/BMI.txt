@@ -1,0 +1,2 @@
+[name = 1, age = 20, height = 188.0, weight = 76.0, bmi = 21.50294250792214, result = 정상]
+[name = 2, age = 22, height = 170.0, weight = 65.0, bmi = 22.49134948096886, result = 정상]

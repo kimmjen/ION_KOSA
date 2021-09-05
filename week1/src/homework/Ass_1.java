@@ -15,7 +15,7 @@ public class Ass_1 {
 
 		// 과제 1
 		for (int i = 1; i <= 5; i++) {
-			sum1 += i;
+			tmp1 += i;
 			sum1 += tmp1;
 		}
 		System.out.println("과제 1 : " + sum1);
@@ -29,7 +29,7 @@ public class Ass_1 {
 		
 		// 과제 3
 		for (int i = 2; i <= 10; i++) {
-			sum3 += i - 1 / i;
+			sum3 += (i - 1 / i);
 		}
 		System.out.println("과제 3 : " + sum3);
 	}
