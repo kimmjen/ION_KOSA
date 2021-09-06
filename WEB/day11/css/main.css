@@ -1,0 +1,59 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transition: 1s;
+}
+.box:focus {
+    width: 300px;
+    background-color: royalblue;
+}
+input { width: 100px; }
+input:focus {
+    background-color: royalblue;
+}
+.box:hover {
+    height: 300px;
+    background-color: salmon;
+}
+/* 선택자 */
+div, input, img {
+    color: turquoise;
+}
+/* 선택자 서브엘리먼트 */
+div span {
+    text-align: center;
+    color: violet;
+}
+
+.fruits span:first-child{
+    color: rebeccapurple;
+}
+.fruits h3:last-child{
+    color: thistle;
+}
+
+.fruits *:nth-child(3) {
+    color: teal;
+}
+
+.fruits *:nth-child(2n) {
+    color: blue;
+}
+
+.fruits *:nth-child(2n + 1) {
+    color:sandybrown;
+}
+th, td {
+    width: 100px;
+    border: 1px solid black;
+}
+
+table {
+    text-align: center;
+}
+
+#f {
+    width: 50px;
+    height: 30px;
+}
