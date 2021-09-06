@@ -1,0 +1,19 @@
+
+h1 {
+    text-align: center;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+th {
+    height: 84px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.singer{
+    display: inline-block;
+    line-height: 18px;
+    padding-right: 1px;
+
+}
