@@ -57,3 +57,8 @@ table {
     width: 50px;
     height: 30px;
 }
+
+.bullet li{
+    /* display: none; */
+    text-decoration: none;
+}

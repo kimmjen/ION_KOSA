@@ -44,15 +44,15 @@ public class VideoManager {
         // videos.add(video);
         // videomap.put(title, videos);
         // 3.
-        // Video video = new Video(title, category);
-        // ArrayList<Video> videos = videomap.getOrDefault(title, new ArrayList<>());
-        // videos.add(video);
-        // videomap.put(title, videos);
+         Video video = new Video(title, category);
+         ArrayList<Video> videos = videomap.getOrDefault(title, new ArrayList<>());
+         videos.add(video);
+         videomap.put(title, videos);
         // 4.
-        Video video = new Video(title, category);
-        ArrayList<Video> videos = videomap.getOrDefault(title, new ArrayList<>());
-        videos.add(new Video(title, category));
-        videomap.put(title, category);
+//        Video video = new Video(title, category);
+//        ArrayList<Video> videos = videomap.getOrDefault(title, new ArrayList<>());
+//        videos.add(new Video(title, category));
+//        videomap.put(title, category);
     }
 
     // 2. 비디오 삭제
@@ -98,7 +98,7 @@ public class VideoManager {
             if (value.isRent()) {
                 count++;
             } else {
-                System.out.println(video.get(i).getRentName() + "님이 대여하신 비디오가 있습니다.");
+                System.out.println(value.getRentName() + "님이 대여하신 비디오가 있습니다.");
                 flag = false;
             }
         }
@@ -151,7 +151,7 @@ public class VideoManager {
             int idx = 1;
             for (Video video : list) {
                 System.out.println(idx + " 번째 비디오");
-                SYstem.out.println(video + "\n");
+                System.out.println(video + "\n");
             }
             System.out.println();
         }

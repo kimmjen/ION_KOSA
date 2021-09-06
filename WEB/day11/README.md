@@ -68,4 +68,47 @@ a : <a href=""></a>
 
   <a href="site"> site </a>
   <a href="mailto:happydoyeon88@gmail.com"> site </a>
+
+위치이동
+
+<a name = "top"></a>
+<a href= " #top"></a>
+```
+
+>
+
+[태그 type 종류](https://webisfree.com/2014-07-31/[css]-ul-li%ED%83%9C%EA%B7%B8%EC%97%90%EC%84%9C-%EC%9E%90%EC%A3%BC-%EC%93%B0%EC%9D%B4%EB%8A%94-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%A2%85%EB%A5%98)
+```
+ol type="1, A, a, I, i" 5가지의 표현 방법 존재
+
+ul 태그 type 종류
+- disc
+
+- hiragana
+
+- hiragana
+
+- lower-alpha
+
+- lower-alpha
+
+- square
+
+
+- circle
+
+- decimal
+
+- decimal
+
+- upper-alpha
+
+- upper-alpha
+
+- upper-roman
+
+- upper-roman
+
+- none
+
 ```
