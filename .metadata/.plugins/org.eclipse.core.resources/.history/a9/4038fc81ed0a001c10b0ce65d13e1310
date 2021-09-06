@@ -1,0 +1,19 @@
+package ex06.Collection_Set;
+
+import java.util.HashSet;
+
+// set 순서없고, 중복 허용하지 않음
+public class HashSetEx01 {
+	public static void main(String[] args) {
+		HashSet hs = new HashSet();
+		
+		hs.add("키보드1");
+		hs.add("키보드2");
+		hs.add("키보드3");
+		hs.add("키보드4");
+		hs.add("키보드5");
+		
+		System.out.println("요소 개수 : " + hs.size());
+		
+	}
+}

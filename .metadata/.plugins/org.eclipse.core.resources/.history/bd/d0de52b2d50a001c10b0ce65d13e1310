@@ -1,0 +1,32 @@
+package ex04.StringBuffer;
+
+public class StringBufferEx01 {
+	public static void main(String[] args) {
+		StringBuffer sb = new StringBuffer();
+		
+		System.out.println("lenth    /    capacity");
+		
+		int len = sb.length();
+		int size = sb.capacity();
+		
+		System.out.println(len + "    /    " + size);
+		
+		sb.append("kosa");
+		len = sb.length(); size = sb.capacity();
+		System.out.println(len + "    /    " + size);
+		
+		sb.append("hellojava");
+		len = sb.length(); size = sb.capacity();
+		System.out.println(len + "    /    " + size);
+		
+		sb.append("korea");
+		len = sb.length(); size = sb.capacity();
+		System.out.println(len + "    /    " + size);
+		
+		sb.append("abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxy");
+		len = sb.length(); size = sb.capacity();
+		System.out.println(len + "    /    " + size);
+
+
+	}
+}

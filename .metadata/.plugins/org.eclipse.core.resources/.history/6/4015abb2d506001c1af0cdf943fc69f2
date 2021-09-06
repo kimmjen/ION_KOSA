@@ -1,0 +1,31 @@
+package grade;
+
+import java.util.Scanner;
+
+public class StudyGradeArray {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		// 이름 국어 영어 수학 총점 평균
+		// 입력 = 학생수 50
+		// 한사람씩 입력
+		// 출력 = 전체 출력
+		// 검색 & 성적(ex 80점 이상만 출력 성적순정렬)
+		// 삭제
+		String name1;
+		
+		int score;
+		int num = 0;
+		
+		Name nameclass = new Name();
+		
+		Score scoreclass = new Score();
+		
+		Manager[] s = new Manager[50];
+		for (int i = 0; i < s.length; i++) {
+			s[i] = new Manager();
+		}
+		
+		
+	}
+}

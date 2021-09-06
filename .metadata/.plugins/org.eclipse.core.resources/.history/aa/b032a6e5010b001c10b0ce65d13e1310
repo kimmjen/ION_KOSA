@@ -1,0 +1,21 @@
+package p_2021_09_01;
+
+import java.util.Scanner;
+import java.util.Vector;
+
+public class App {
+	
+	public static void main(String[] args) {
+		
+		Vector<String> v = new Vector<String>();
+		Scanner sc = new Scanner(System.in);
+		int n;
+		
+		while() {
+			System.out.println("1, 2, 3");
+			n
+			
+		}
+		
+	}
+}

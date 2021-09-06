@@ -1,0 +1,29 @@
+package ex02.Wraper;
+
+class Point {
+
+}
+
+public class MainEntry {
+	public static void main(String[] args) {
+		Integer iA = new Integer(10);
+		Integer iB = new Integer("10");
+		String su = "30";
+		Point pt = new Point();
+
+		System.out.println(iA.MAX_VALUE); // 2147483647
+		System.out.println(iB.MIN_VALUE); // -2147483648
+
+		System.out.println(pt); // 123a439b
+		System.out.println(pt.toString()); // 123a439b
+		System.out.println(iA.getClass().getName() + '@' + Integer.toHexString(iA.hashCode()));
+		System.out.println();
+		System.out.println(iA); // 10
+		System.out.println(iA.getClass().getName() + '@' + Integer.toHexString(iA.hashCode())); // java.lang.Integer@a : a = 10
+		System.out.println(iA.getClass().getName() + '@' + Integer.toHexString(pt.hashCode())); // java.lang.Integer@123a439b
+		
+		System.out.println();
+		System.out.printf("%d %o %x %X\n", 10, 10, 10, 10);
+		System.out.printf("%d %d %d \n", 012, 0xA, 0x12); // 0숫자 - 16진수, 0x숫자 - 16진수
+	}
+}

@@ -1,0 +1,9 @@
+package ex05.utilPackage;
+
+import java.util.Calendar;
+
+public class MainEntry {
+	public static void main(String[] args) {
+		Calendar c = Calendar.getInstance(); // 
+	}
+}

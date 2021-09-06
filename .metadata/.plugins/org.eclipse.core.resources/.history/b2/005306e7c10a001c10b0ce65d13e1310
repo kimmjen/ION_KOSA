@@ -1,0 +1,23 @@
+package ex02.Wraper;
+
+class Point {
+	
+}
+
+public class MainEntry {
+	public static void main(String[] args) {
+		Integer iA = new Integer(10);
+		Integer iB = new Integer("10");
+		String su = "30";
+		Point pt = new Point();
+		
+		
+		System.out.println(iA.MAX_VALUE); // 2147483647
+		System.out.println(iB.MIN_VALUE); // -2147483648
+		
+		System.out.println(pt);
+		System.out.println(pt.toString());
+		System.out.println(iA);
+		System.out.println(iA.getClass());
+	}
+}

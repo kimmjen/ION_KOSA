@@ -1,0 +1,11 @@
+package ex01.objectClass;
+
+class Rectangle {
+	int x, y;
+	public void disp() {
+		System.out.println(x + ", " +  y);
+	}
+}
+public class ToStringMain {
+
+}

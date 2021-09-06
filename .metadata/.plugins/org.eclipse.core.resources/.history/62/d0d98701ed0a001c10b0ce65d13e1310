@@ -1,0 +1,10 @@
+package ex06.Collection_Set;
+
+import java.util.HashSet;
+
+// set 순서없고, 중복 허용하지 않음
+public class HashSetEx01 {
+	public static void main(String[] args) {
+		HashSet<E>
+	}
+}

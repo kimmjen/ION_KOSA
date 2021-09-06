@@ -1,0 +1,13 @@
+package ex05.utilPackage;
+
+import java.util.Calendar;
+
+public class MainEntry {
+	public static void main(String[] args) {
+		Calendar c = Calendar.getInstance(); // system이 가지고 있는 날짜 얻어옴
+		
+		System.out.print(c.get(Calendar.YEAR) + " 년");
+		System.out.print(c.get(Calendar.MONTH) + " 월");
+		System.out.print(c.get(Calendar.DATE) + " 일");
+	}
+}

@@ -1,0 +1,10 @@
+package ex03.string;
+
+public class StringMethod {
+	public static void main(String[] args) {
+		String s1 = "HelloJAVA";
+		String s2 = "kimmjen";
+		
+		System.out.println(s2.replace("mm", "MM"));
+	}
+}

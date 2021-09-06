@@ -1,0 +1,764 @@
+>> day10 -21/09/03
+
+ > IO
+
+
+===================================================
+>> day09 -21/09/02
+
+ > Collection(자료구조) : data를 시스템에 효율적으로 저장하기 위한 방법
+   알고리즘 : 어떠한 문제를 풀어내기 위해 정해진 일련의 절차나 방법
+
+  1) Set  : 순서없고, 중복허용하지 않음
+       HashSet  / TreeSet
+
+  2) List : 순서 있고, 중복허용한다
+    - 변수 --> 배열( 고정길이 )  --> 가변길이
+     int[] arr = new int[90]; 
+     
+     Vector <---- jdk 1.x ,  가변길이,  동기화지원
+     ArrayList  <--- jdk 2.x ,  가변길이,  동기화 지원안함
+	  	검색, 대량의 데이터 삽입/삭제
+
+     LinkedList  <--- data 삽입/삭제 수월함
+
+  메서드 설명 
+boolean offer() Queue(큐)에 객체를 넣는다 
+poll() Queue(큐)에서 데이터를 꺼내온다. 만일 Queue(큐)가 비어있다면 null 을 반환. 
+peek() 큐의 맨 아래 있는 객체를 반환한다. 이 때 객체를 큐에서 제거하진 않는다
+
+    - LinkedList 참고 사이트
+     http://alecture.blogspot.com/2012/10/linkedlist.html
+
+     Stack     LIFO
+     Queue <-- interface   FIFO 
+
+   3) Map : key/value 한쌍으로 처리. ( set + list )
+
+문제] Video class 
+     title 비디오제목
+     category  장르
+     lend   대여여부
+     lendName  대여자(고객명)
+     lendDate   대여일자(오늘날짜 입력하심 되요)
+
+  Video 추가 / 삭제 / Video 리스트 출력 / 수정 / 프로그램 종료  출력하는 프로그램 작성하기.
+
+ 어제 고객 문제와 비디오 문제 컬렉션 이용해서 작성하기 2:30까지~ 
+
+
+ > Generic(제네릭)  :     <T> 
+
+ class Point {
+	int x, y;
+ }
+
+ class GenericEx<T> {
+	T  x, y;
+ }
+
+ > IO ( Input  Ouput ) <----- java.io package
+
+			Input			   Output
+   byte		   ~~~~InputStream		|	~~~OutputStream
+   charater	   	   ~~~~Reader		|	~~~Writer
+
+  -- InputStream : 입력의 최상위 클래스 : read()
+  -- OutputStream : 출력의 최상위 클래스 : write()
+
+문제] 숫자 2개 입력 받고, 연산 1개 입력 받아서 사칙연산 구하는 프로그램 만들기(io 처리)
+
+문제2] employee.txt  ( file 이용 )
+ 	이름, 직급, 부서 입력해서 저장하기
+
+
+문제3] 비만도 측정 프로그램 작성하기 - collection, file io 이용하기
+   추가 / 삭제 / 출력 / 종료  처리할것 
+
+  몸무게, 키 를 입력 받아서  BMI 계산하기
+  BMI = 몸무게 / ( (키 / 100.0) * (키 / 100.0) )  ;
+
+
+ 판정 >
+18.5 미만	체중부족
+18.5 ~ 22.9	정상
+23.0 ~ 24.9	과체중
+25.0 이상	비만
+
+ 
+ > WEB - Html / CSS / JavaScript 
+
+
+==================================
+>> day08 -21/09/01
+
+ > API 
+   java.lang package
+ 
+   Object
+   String
+   StringBuffer
+   StringBuilder
+   ....
+
+   Wraper class : 기본 자료형에 대응되는 클래스형 자료형
+    기본 자료형             클래스형(레퍼런스 또는 참조형)자료형
+    int 			Integer
+    float			Float
+    char			Character
+    double			Double
+    ....			....
+
+   java.util package
+   Random class
+   Scanner class
+   날짜관련,...
+   형식지정,..
+   StringTokenizer
+   ....
+
+   java.text.SimpleDateFormat
+
+ > Collection(자료구조) : data를 시스템에 효율적으로 저장하기 위한 방법
+   알고리즘 : 어떠한 문제를 풀어내기 위해 정해진 일련의 절차나 방법
+
+  1) Set  : 순서없고, 중복허용하지 않음
+       HashSet  / TreeSet
+
+  2) List : 순서 있고, 중복허용한다
+    - 변수 --> 배열( 고정길이 )  --> 가변길이
+     int[] arr = new int[90]; 
+     
+     Vector <---- jdk 1.x ,  가변길이,  동기화지원
+     ArrayList  <--- jdk 2.x ,  가변길이,  동기화 지원안함
+	  	검색, 대량의 데이터 삽입/삭제
+
+     LinkedList  <--- data 삽입/삭제 수월함
+
+  메서드 설명 
+boolean offer() Queue(큐)에 객체를 넣는다 
+poll() Queue(큐)에서 데이터를 꺼내온다. 만일 Queue(큐)가 비어있다면 null 을 반환. 
+peek() 큐의 맨 아래 있는 객체를 반환한다. 이 때 객체를 큐에서 제거하진 않는다
+
+    - LinkedList 참고 사이트
+     http://alecture.blogspot.com/2012/10/linkedlist.html
+
+     Stack     LIFO
+     Queue <-- interface   FIFO 
+
+
+문제] Customer class
+   고객번호, name, address, tel  변수
+   생성자함수, set/get method
+
+  고객 추가 / 삭제 / 고객 리스트 출력 / 수정 / 프로그램 종료  출력하는 프로그램 작성하기.
+
+
+문제2] Score class
+       이름, 국어, 영어, 전산 점수 
+        총점, 평균, 학점(평점) 
+
+
+ > IO
+ 
+ > WEB - Html / CSS / JavaScript 
+
+===================================
+>> day07 -21/08/31
+
+ > 상속 
+
+ > override <--- 상속
+  함수명, 매개변수, 리턴타입까지 모두 같은 함수 
+
+ > default constructor method && Java API
+  cmd> javadoc MainEntry.java -encoding UTF-8   <-- 한글깨짐 현상 처리 
+
+ > 추상 클래스
+  - 미완성 클래스 <--- 자체적으로 객체 생성할 수 없다.
+    ( 단, 상속 받은 자손 클래스로는 객체 생성 할 수 있다. )
+  - 추상메소드를 갖고 있다.
+    public void disp() {  }  // 일반메소드
+    public abstract void disp();   // 추상메소드 - 몸체(블럭)를 갖지 않는다.
+  - abstract 
+
+   형식>
+ 형식>
+      abstract public class Point {  // 부모 추상 클래스
+		void disp() {   }
+		abstract void show(); // 추상메소드
+      }
+
+      class Sub extends Super {  // 자손(서브) 클래스
+
+      }
+   
+
+ > 다형성 : overload, constructor
+            abstract class 로도 가능함
+
+
+ 문제1] Trans 추상클래스 <--- 부모는 모든 자손에게 상속할 수 있는 최소한의것
+   추상메소드 start() / stop()
+   public String name() {
+ 	return "기차"; 
+   }
+
+   sub class : Subway / Bus / Biclycle / Plain
+  
+    MainEntry 에서 메인 함수 구현하기
+
+
+ > interface 
+   - 클래스 아님.(객체 생성 안됨)
+   - implements
+   - 추상메소드, 상수만 가질 수 있다.( abstract, final 생략 가능 )
+   - 다중 구현,...
+
+  ex07.multiImplements.Test interface
+  ex04.Abstract.Shape  abstract class 
+  ex06.Interface.IDraw  interface 
+
+문제2] interface
+    Tran (운송수단)  interface로 구현 
+
+    Bus / Plan class 구현하기 
+
+
+ > final
+   class ---> 상속금지
+   method --> override 금지
+   field ---> 값 변경 금지(상수)
+
+ > static member  <--- 공유
+   호출 방법 > 
+	객체명.스태틱멤버 또는 스태틱멤버함수()
+        클래스명.스태틱멤버 또는 스태틱멤버함수()
+
+
+ > enum 열거형 - 새로운 클래스 타입을 정의하는것
+       - 특정한 값만을 가질 수 있는 데이터 타입을 정의 할때 필요하다.
+ 형식>
+	[접근지정자] enum 열거형이름 {  필요한 상수들 나열,..... }
+
+문제] Emp  class                       <--- Reqular <--- Sales 
+   이름, 연락처, 부서, 직급, //               급여           커미션
+
+  
+====================================
+>> day06 -21/08/30
+
+  > 디버깅(Debuging) 방법
+ 
+  > 난수 발생 - 2가지 방법
+  1) Math.random()  - java.lang
+     
+     Math.random() * n <=== 0 ~ n-1 값 추출됨
+
+  2) Random calss - java.util package
+	nextXXX();
+	    자료형
+	nextInt();
+	nextDouble(), 
+	nextFloat(),....
+
+       rand.nextInt(n);  // 0 ~ n-1 값 추출함
+
+문제1] 업/다운 게임 프로그램 작성 (난수 이용)
+1~100 숫자 중에서 임의의 난수 추출해 놓고, 사용자는 5번의 기회를줘서 입력 받는다.  그 입력 받은 숫자와 추출한 난수가 같은지를 판정하는 프로그램 작성
+
+문제2] 로또 프로그램 작성 :   
+   1 ~ 45 숫자 중에서 6개 추출 (단, 같은수 없어야함)
+
+ > overload method(중복함수)?
+   함수명은 같고, 매개변수의 개수가 다르거나 매개변수의 개수가 같다면 자료형이 다른 함수 
+
+    cf) override <--- 상속
+
+  > 가변길이 배열
+ 동일한 데이터일때 길이가 다른경우,...
+
+ - instance method : 객체 생성하고 사용해야함 (메모리상에 할당이 되어야...)
+    예) Scanner sc = new Scanner(System.in);
+           sc.nextInt(), sc.nextFloat(), sc.nextLine(),....
+          sc <--- object, instance
+  - static method : 객체 생성 없이 바로 사용 가능함
+    호출방법> objectName.methodName();
+	     className.methodName();  // 
+
+ > OOP(객체지향)
+  - class 설계
+	1) 코딩레벨
+	2) 이클립스 기반 
+
+  > Constructor(생성자) method
+     - 클래스명과 동일하다.
+     - 리턴타입 없음( void 조차 사용하지 않음 )
+     -  중복정의 가능함( overload 가능 - 중복함수)
+     - default constructor 갖고 있음
+       (단, 사용자가 생성자 함수를 재정의 하면 디폴트 생성자 함수 기능 상실함 )
+     - 멤버변수의 초기화 담당
+
+  > this : 자기자신, 객체 생성 될때 그 객체의 시작 주소
+         this() : 생성자함수의 다른 이름
+
+ > inheritance(상속)
+   - extends
+   - 단일 상속만 지원
+   - super 
+   - 재사용
+   - 확장 
+
+형식> 
+ class Super {  // 부모 클래스
+
+ }
+
+ class Sub  extends  Super {  // 자식클래스 
+
+ }
+
+cf) 
+-- java.lang package 자동으로 import 
+-- Object class  자동으로 extends 되고 있음.
+    super : 부모 클래스의 멤버에 접근 할 수 있는 인스턴스
+	super() : 부모클래스의 생성자함수 
+	 Point pt = new Point();   pt와 같은 역할
+    	 pt.disp();
+
+문제1] class Sawn {
+	이름, 직급, 부서, 급여, 연락처
+	setter /getter method
+               constructor method  2개이상 
+	output method	
+}
+
+문제2] 성적 프로그램을 클래스로 구현하기
+   
+문제3] TV class 구현하기
+     채널, 색상, 소리
+
+--------------------------------------------------------------------------
+ 
+>> 팀과제 : 매주 월요일 오후 2:10~ 부터 진행
+   <1번째 과제 : UML >
+     1팀 : 재혁팀 - Class Diagram / Object Diagram
+     2팀 : 철호팀 - Use Case Diagram / Deployment Diagram
+     3팀 : 성호팀 - Sequence Diagram / Interaction Diagram
+     4팀 : 상옥팀 - Collaboration Diagram / StateChart Diagram  
+     5팀 : 병민팀 - Activity Diagram / Component Diagram 
+     6팀 : 재후팀 - Package Diagram / Timing Diagram
+
+
+***** 팀 구성 *********************
+ 1팀 :  임재혁씨 - 박수오, 윤현조, 김제민
+ 2팀 :  조철호씨 - 박은진, 이용준, 황보은영
+ 3팀 :  이성호씨 - 구본아, 김예지, 이충무
+ 4팀 :  이상옥씨 - 유현수, 윤지훈, 장원혁
+ 5팀 :  김병민씨 - 김호영, 이수민, 강다혜
+ 6팀 :  이재후씨 - 권다솔, 손동현, 박병제
+ 
+
+ 반대표 : 이상옥氏 010 2527 2927
+ 부대표 : 김호영氏 010 4104 6755
+
+===============================
+>> day05 -21/08/27
+
+문제1] int[] a = { 7, 5, 3, 8, 2 }; 배열의 합 구하는 프로그램작성
+
+문제2] 기상청 - 배열로 처리할것
+        9월의 강수량 평균을 구하는 프로그램 작성(단, 30일 기준)
+
+문제3]  int[] a = { 7, 5, 7, 8, 2, 7, 3, 7, 7, 90 };   
+          int seek = 7;
+
+ 
+문제4] 7명의 데이터를 받아서 총점/평균/학점 구하는 프로그램 작성    ( 배열이용할것 )
+ 제시>
+ 입력 받기 : 이름, 3과목
+ 출력은  총점, 평균, 학점(평점)까지 구하기
+
+결과>
+  이도연 님의 성적표
+  국어 : 100, 영어 : 100, 전산 : 100
+  총점 : 300, 평균 : 100.00  학점 : A
+
+ 이도연2 님의 성적표
+  국어 : 100, 영어 : 100, 전산 : 100
+  총점 : 300, 평균 : 100.00  학점 : A
+
+ 이도연3 님의 성적표
+  국어 : 100, 영어 : 100, 전산 : 100
+  총점 : 300, 평균 : 100.00  학점 : A
+
+
+문제5] info() {  이름, 연락처, 주소 출력 함수 }
+문제6] abs(int x) { 절댁값 출력하는 함수 만들기 }
+문제7] max() {   두개 정수 입력 받아서 큰수 리턴 하는 함수 }
+
+문제8] 성적처리 프로그램 함수로 분할(분리)할것
+   입력 함수 input()  - 이름 , 국어, 영어,전산 점수 
+   총점 함수 total(~~~) - 총점 구하는 함수
+   평균 함수 average( ~~ ) - 평균 구하는 함수
+   평점(학점) grade( ~~ ) - 학점 구하는 함수 
+   출력 함수 output( ) - 결과 출력하는 함수 
+
+문제9] loopLine() { ------------------- 6번 출력하는 함수  }
+
+#########################################################
+
+ > import / export 
+
+ > Array(배열)
+  - 일괄처리 
+  - 동일한 데이터 모임
+  - 메모리상에 연속적 나열
+  - index 는 0부터 시작함
+  - for문이랑 친함
+
+ > 형식 
+   자료형[] 배열명 = new 자료형[열크기];
+   int[] a = new int[30];
+   자료형[][] 배열명 = new 자료형[행크기][열크기];
+   int[][] a = new int[2][3];
+   자료형[][][] 배열명 = new 자료형[면크기][행크기][열크기];
+   int[][[][] a = new int[2][2][3];
+
+
+   1차원 배열 char[] ch = {'a', 'k', 'P', 'D', 'y' }
+
+   String[] str = {"a", "kbs", "Park", "D", "you" }
+
+   자료형[][][] 배열명 = new 자료형[면크기][행크기][열크기];
+
+  > 개선된 루프문(확장 for문) 
+   for(초기값; 조건 ; 증감식) {   반복실행문;  }
+
+   for(자료형 변수명 : 배열명 또는 컬렉션명) { 반복실행문; }
+
+ > sort (정렬)
+  선택, 버블 소트 
+
+
+ > 함수(Method)
+ 메인함수 부담 줄이고, 반복적인 코드를 함수로 만들어서 사용
+  - instance method : 객체 생성하고 사용해야함 (메모리상에 할당이 되어야...)
+    예) Scanner sc = new Scanner(System.in);
+           sc.nextInt(), sc.nextFloat(), sc.nextLine(),....
+          sc <--- object, instance
+  - static method : 객체 생성 없이 바로 사용 가능함
+    호출방법> objectName.methodName();
+	     className.methodName();  // 
+
+  ** 매개변수의 유무 / 리턴타입 유무
+  1) 매개변수 없고, 리턴타입 없는 경우
+    public void methodName() {   }
+
+  2) 매개변수있고, 리턴타입 없는 경우
+    public void methodName(parameter var1, parameter var2,....) {   }
+
+  3) 매개변수 없고, 리턴타입 있는 경우
+    public returnType methodName() {  return value;  }
+
+  4) 매개변수 있고, 리턴타입 있는 경우
+    public returnType methodName(parameter var1, parameter var2,....) {  return value;  }
+
+
+  > 디버깅(Debuging) 방법
+ 
+  > 난수 발생 - 2가지 방법
+
+ > overload method(중복함수)?
+
+    cf) override <--- 상속
+
+  > 가변길이 배열
+
+ > OOP(객체지향)
+
+** 개인 과제!!! (용어 조사)
+ class
+ 정보은닉(캡슐화) / 상속 / 다형성 / 추상화
+ 접근제한자
+ 생성자함수
+ 멤버변수 / 멤버 함수
+ overload(중복함수)
+ override
+ object / instance
+ interface
+ abstract 
+ this / static 
+
+===================================
+>> day04 -21/08/26
+
+> 제어문
+  2) 선택문
+      switch ~ case
+
+    switch ~ case
+
+ case 숫자 : ~~~; break;
+ case '문자': ~~~; break;
+ case "문자열" : ~~~; break;
+
+  3) 반복문
+    for , 확장 for문
+    while
+    do~while
+
+  4) 기타구문
+      break
+      continue
+
+ 
+과제] 성적처리 프로그램 작성
+이름, 국어,전산,영어 점수 입력 받아서 총점, 평균, 학점 까지 구하는 프로그램 작성
+
+결과>
+ 이도연 님의 성적표 ******
+ 국어 : 100, 전산 : 100, 영어: 100
+ 총점: 300  평균 : 100.00  평점(학점) : A
+
+ 전제조건, 점수 0~ 100 점 사이값만 입력 받기,
+ 예외처리 
+ y/n 입력 받아서 계속 할지 여부를 처리하기
+ 
+
+
+
+ > 배열
+
+ > 메소드
+
+
+과제1] 1 + (1 + 2) + (1 + 2 + 3) + (1 + 2 + 3 + 4) + (1 + 2 + 3 + 4 + 5) = ?
+과제2] (-1) + 2 + (-3) + 4 + (-5) + ... + (-9) + 10 = ?
+과제3] 1/2 + 2/3 + 3/4 + 4/5 + 5/6 + 6/7 + 7/8 + 9/10 = ?
+
+
+1. 	2.	3.	4.
+*	*****	    *	*****
+**	****	   **	 ****
+***	***	  ***	  ***
+****	**	 ****	   **
+*****	*	*****	    *
+
+5.		6.
+    *		*********
+   ***		 *******
+  *****		  *****
+ *******	                  ***
+*********	                   *
+
+	7.		
+	    *		
+	   ***		
+	  *****		
+	 *******	
+	*********	
+	 *******	
+	  *****		
+	   ***		
+	    *	
+
+1, 2, 3, 5 번 코딩	
+
+
+ 과제4] 1~ 10까지 출력하는 프로그램 작성 (for문 )
+ 과제5] 1~ 100까지 합을 출력하는 프로그램 작성
+ 과제6] 1~ 100까지 중에서 짝수 출력하고 한행에 10개씩 출력
+
+ 과제7]  대문자 <--> 소문자 변경 프로그램 작성 ( if ) 
+ 과제8]  두수 입력 받아서 나눗셈 하는 프로그램 작성 (예외처리)
+   - 숫자가 아닌 문자 입력 됐을때.
+   - 정수가 아닌 실수 데이터 입력 됐을때.
+   - 어떤 수를 0으로 나눌 수 없다.
+  
+
+=======================================
+>> day03 -21/08/25
+
+  > DataType
+
+ > Operator 
+   - 우선 순위 있음
+      최단산쉬관논삼대콤
+ 높<--                    --> 낮
+
+ > 제어문
+  1) 비교문
+      if ~ else
+
+과제1] 3개 정수 입력 받아서 큰 순서대로 출력하는 프로그램 작성
+ x = 3
+ y = 4
+ z = 5
+
+  result>
+    5 > 4 > 3 
+
+과제2] 연산자(+, -, *, /)와 정수 2개 입력 받아 사칙연산 프로그램 작성
+
+> 입력받기 - Scanner class  jdk 5.0
+   java.io <--- Input  / Output
+
+   nextXXX()
+        자료형
+   nextInt()
+   nextFloat()
+   nextDouble()
+   next() vs nextLine()  <--- String input method
+
+문제2] 다음을 입력 받아서 출력하는 프로그램 작성
+  이름, 국어, 영어, 전산 점수 입력 받아서
+  총점, 평균 까지 출력하는
+
+ result>
+  이도연님의 성적표 *****
+  국어 : 100, 영어: 100, 전산 : 100
+  총점 : 300, 평균: 100.00 
+
+  문제3] 자료형에 맞춰서 선언하고 값 출력하는 프로그램 작성
+   이름 String 
+   나이 int
+   키 또는 몸무게 실수형
+
+  2) 선택문
+      switch ~ case
+  3) 반복문
+      for
+      while
+      do ~ while
+  4) 기타구문
+      break
+      continue
+
+ > Exception (예외처리)
+  Java는 의무적(반드시)으로 예외처리를 해야하는 상황들이 있음.
+    -- 네트워크, 데이터베이스(JDBC), Thread, IO(입출력), File,..
+   
+   1) try ~ catch : 직접처리 - 권장
+   2) throws : 위임
+   3) throw : 예외 던지기 
+ 
+  문제1] 사칙연산 프로그램 작성(예외처리하기)
+  숫자 2개 입력 받고, 연산자(+, -, *, /) 1개 입력 받아서
+  ( if 이용 ) 
+   
+  result> 
+    3
+    5
+    +
+
+   3 + 5 = 8
+
+  
+
+===================================
+>> day02 -21/08/24
+
+ 1) JDK 설치 및 실행
+  https://www.oracle.com/kr/java/technologies/javase/javase-jdk8-downloads.html
+  -> Windows x64
+
+   JDK : 개발 + 실행
+
+   JRE : java로 개발된 소스 실행
+
+ > 환경변수 설정
+  - JAVA_HOME
+    C:\Program Files\Java\jdk1.8.0_301
+
+  - CLASSPATH
+   .;
+
+  - Path 편집
+    %JAVA_HOME%\bin
+
+ 2) 간단 프로그램 작성
+
+ class Hello {
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+		System.out.println(100);
+		System.out.println(12.34);
+		System.out.print("\nhappydoyeon\n\n\n");
+		System.out.printf("%d %c %s %s %f", 30, 'A', "A", "string", 55.789);
+	} // main end
+} // class end
+
+  > 컴파일
+  D:\I-ON\1_Java\workspace>javac Hello.java
+  > 실행
+  D:\I-ON\1_Java\workspace>java Hello
+
+ > 출력함수
+  print()  - 개행없이 출력 
+  printf() - 서식에 맞춰서 출력
+               %문자 - %c, %s, %d or %i, %f, %o, %0x, %0X....
+  println() - 출력 및 개행 
+
+
+ > API 보는 방법
+ https://docs.oracle.com/javase/8/docs/api
+
+  package > class > method > field
+
+ window 폴더 : C:\java_web_app_developer\1_Java\workspace
+ D:\I-ON\1_Java\workspace\day03_basic\src\ex01\dataType
+
+  java package : C:.java_web_app_developer.1_Java.workspace
+ D:.I-ON.1_Java.workspace.day03_basic.src.ex01.dataType
+
+ > STS download ( IDE )
+ https://spring.io/   <----- spring boot 만 있기에  spring framework MVC 
+
+ menu : Help > Eclipse Markplace -> Add on 또는 sts 기재하면 >
+  	Spring Tools 3 Add-On for Spring Tools 4 3.9.18.CI > install button click ==> spring
+
+ menu : Help > install New Software > work with -> 
+		https://download.eclipse.org/releases/2020-12  > Add ==> Web
+
+ > DataType 
+
+ > 메모리 구조
+
+===================================
+ >> 유용한 사이트
+ http://tcpschool.com/
+
+ - 용어
+ http://www.terms.co.kr/
+ https://ko.wikipedia.org
+
+ http://www.etnews.com/
+
+ https://www.codeproject.com
+
+> 동영상 강좌 & 문제 은행
+ https://cafe.naver.com/thisisjava
+ https://cafe.naver.com/javachobostudy
+ https://www.orentec.co.kr/
+ - 신입SW인력을 위한 실전 자바(Java)
+ https://www.youtube.com/playlist?list=PLieE0qnqO2kTyzAlsvxzoulHVISvO8zA9
+ https://www.opentutorials.org/course/1223
+ http://www.easyspub.co.kr/50_Menu/VideoView/534/PUB#view
+
+--------------------------------------
+> 강사컴 공유
+ \\192.168.3.166   
+ \\desktop-th36tt5
+ http://192.168.3.166
+
+ java/java
+ ion/ion
+
+---------------------------------------------------
+>> 이도연(영희)
+ happydoyeon88@gmail.com
+ 010-9872-0202
+
+
+ 

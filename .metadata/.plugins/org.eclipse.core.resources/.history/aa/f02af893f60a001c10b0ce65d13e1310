@@ -1,0 +1,13 @@
+package ex06.collection.list;
+
+import java.util.Vector;
+
+public class VertorEx01 {
+	public static void main(String[] args) {
+		
+		Vector<Integer> v = new Vector<Integer>();
+		
+		System.out.println("length        /        capacity");
+		System.out.println(v.size() + "        /        " + v.capacity());
+	}
+}

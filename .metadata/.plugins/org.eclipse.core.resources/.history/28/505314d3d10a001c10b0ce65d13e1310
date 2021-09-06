@@ -1,0 +1,7 @@
+package ex03.string;
+
+public class StringMethod {
+	public static void main(String[] args) {
+		
+	}
+}

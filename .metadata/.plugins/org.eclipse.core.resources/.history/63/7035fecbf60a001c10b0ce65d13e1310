@@ -1,0 +1,19 @@
+package ex06.collection.list;
+
+import java.util.Vector;
+
+public class VertorEx01 {
+	public static void main(String[] args) {
+		
+		Vector<Integer> v = new Vector<Integer>();
+		
+		System.out.println("length        /        capacity");
+		System.out.println(v.size() + "             /             " + v.capacity());
+		
+		Vector<Integer> v2 = new Vector<Integer>(3, 4); // 3, 4 초기용량/ 증가용량
+		v2.add(2);
+		v2.add(new Integer(333));
+		v2.add(2);
+		
+	}
+}

@@ -1,0 +1,19 @@
+package ex01.array;
+
+public class MainEntry {
+	public static void main(String[] args) {
+		// 1.
+		char[] ch1; // 선언
+		ch1 = new char[4]; // 배열 생성, 메모리 할당
+		
+		// 2.
+		char[] ch2 = new char[4]; // 선언과 동시에 배열생성, 메모리 할당\
+		// 배열 초기화
+		ch2[0] = 'J';
+		ch2[1] = 'J';
+		ch2[2] = 'J';
+		ch2[3] = 'J';
+		
+		
+	}
+}

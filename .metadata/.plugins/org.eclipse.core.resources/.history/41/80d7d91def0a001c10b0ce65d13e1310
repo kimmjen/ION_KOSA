@@ -1,0 +1,9 @@
+package ex06.Collection_Set;
+
+public class TreeSet {
+	public static void main(String[] args) {
+		TreeSet set = new TreeSet();
+		
+		int[] score = {11, 22, 33, 44, 55, 66, 77, 88, 99, 100};
+	}
+}

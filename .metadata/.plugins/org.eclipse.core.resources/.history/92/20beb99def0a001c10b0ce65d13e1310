@@ -1,0 +1,12 @@
+package ex06.Collection_Set;
+
+// 객체 생성
+class Person {
+	
+}
+
+public class HashSetEx02 {
+	public static void main(String[] args) {
+		
+	}
+}

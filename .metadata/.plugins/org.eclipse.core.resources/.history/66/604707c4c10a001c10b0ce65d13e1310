@@ -1,0 +1,9 @@
+package ex02.Wraper;
+
+public class MainEntry {
+	public static void main(String[] args) {
+		Integer iA = new Integer(10);
+		Integer iB = new Integer("10");
+		System.out.println();
+	}
+}

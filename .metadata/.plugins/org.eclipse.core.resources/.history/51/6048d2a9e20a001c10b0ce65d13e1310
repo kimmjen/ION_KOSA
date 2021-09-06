@@ -1,0 +1,14 @@
+package ex04.StringBuffer;
+
+public class StringBufferEx02 {
+	public static void main(String[] args) {
+		StringBuffer sb = new StringBuffer("This");
+		System.out.println(sb);
+		
+		sb.append(" is Pencil");
+		System.out.println(sb);
+		
+		sb.insert(7, " my");
+		System.out.println(sb);
+	}
+}

@@ -1,0 +1,142 @@
+>> day09 -21/09/03
+
+ > vscode 설치 및 환경 설정
+
+ > HTML 기본 문법
+
+  - HTML
+  - CSS
+  - JavaScript 
+
+
+
+>>>>>>> 유용한 사이트 <<<<<<<<<<<<<<<<<<<<<<<<<
+
+http://www.w3schools.com/
+http://www.w3.org/
+
+http://opentutorials.org/course/1
+
+https://msdn.microsoft.com/ko-kr/library/htbw4ywd(v=vs.94).aspx
+
+>> 무료 웹 에디터 
+
+ https://brunch.co.kr/@asaroon/1
+
+ - 에디터 플러스 단축키
+  https://docs.emmet.io/cheat-sheet/
+
+>>
+ https://developer.mozilla.org/ko/docs
+
+ http://html5test.com
+
+>> 무료 동영상 강의
+ https://www.youtube.com/watch?v=jV7JHVmRl8Q&list=PLG7te9eYUi7uvROuVChYgAL5pMK7gnWSp&index=1
+
+
+>> 제 4장 HTML5 자바스크립트 API
+http://html5.firejune.com/doc.html
+
+>> HTML5 & CSS3 활용
+http://2107.co.kr/tacademy/
+
+>> [CSS]스크롤바 따라다니는 플로팅 메뉴 만들기(광고 및 추천 설치)
+http://cocosoft.kr/149
+
+>> tag 테스트 할 수 있는 곳 
+http://jsbin.com/
+
+https://zygotebody.com/
+
+
+>> JavaScript
+http://www.w3schools.com/js/js_examples.asp
+
+http://jqueryvalidation.org/
+
+>> FileZilla 웹 서버 (무료)
+https://filezilla-project.org/
+https://filezilla-project.org/download.php?type=client
+
+====================================================
+
+[ 웹 워커 관련 참고 사이트]
+
+>http://slides.html5rocks.com/#web-workers
+
+>http://people.mozilla.com/~prouget/demos/worker_and_simulatedannealing/index.xhtml
+
+> http://html5demos.com/worker
+> http://htmlfive.appspot.com/static/tracker1.html
+
+[ Geolocation 참고 사이트]	
+
+> http://html5demos.com/geo
+
+> http://mobile.tutsplus.com/tutorials/mobile-web-apps/html5-geolocation/
+
+> http://diveintohtml5.info/geolocation.html
+
+
+[ 드래그 랜 드롭 참고 사이트]
+
+> http://html5demos.com/drag
+
+> http://html5demos.com/drag-anything
+
+> http://html5demos.com/dnd-upload
+
+[ SVG 관련 참고 사이트]
+
+> https://developer.mozilla.org/ko/demos/tag/tech:svg
+
+> http://svg-wow.org/camera/camera.xhtml
+
+> http://svg.kvalitne.cz/worldlandmarks/worldlandmarks.svg
+
+> http://debeissat.nicolas.free.fr/svg3d.php
+
+> http://codinginparadise.org/projects/svgweb/samples/demo.html
+
+> http://lavadip.com/experiments/jigsaw/
+
+> http://upload.wikimedia.org/wikipedia/commons/6/6c/Trajans-Columnlower-animated.svg
+
+> http://svg.kvalitne.cz/ireland/irelandvacation.svg
+
+> http://www.carto.net/papers/svg/us_crime_2000/map.svgz
+
+> http://workshop.rs/projects/twings/
+
+> http://www.themaninblue.com/experiment/Blobular/
+
+> http://www.bogotobogo.com/svg_source/SVGDigitalClock.svg
+
+[Canvas관련 참고 사이트]
+
+> http://www.feedtank.com/labs/html_canvas/
+
+> http://www.andrew-hoyer.com/experiments/cloth
+
+> http://www.nihilogic.dk/labs/strange_attractors/
+
+> http://www.professorcloud.com/mainsite/canvas-nebula.htm
+
+> http://bomomo.com/
+
+> http://spielzeugz.de/html5/liquid-particles.html
+
+> http://hakim.se/experiments/html5/sinuous/01/
+
+> http://hakim.se/experiments/html5/blob/03/
+
+> http://gyu.que.jp/jscloth/
+
+> http://www.chromeexperiments.com/arcadefire/
+
+> http://kennethjorgensen.com/canvas/tree.html
+
+=========================================
+> 동강
+https://www.youtube.com/playlist?list=PLMp7xXc5vT2NPclzxmAWbAw51zA_Z3dSy

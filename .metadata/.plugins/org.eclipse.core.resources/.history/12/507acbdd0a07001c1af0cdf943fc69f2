@@ -1,0 +1,22 @@
+package ex06;
+
+public class MainEntry {
+	// 2) 매개변수 있고, 리턴타입 없는 경우
+	public void name(String name) {
+		System.out.println("당신은 " + name + "님 이군요");
+	}
+	
+	
+	public static void main(String[] args) {
+		System.out.println("main start!!!");
+
+		line(); // 호출
+		System.out.println("main end");
+	}
+
+	// 1) 매개변수 없고, 리턴타입 없는경우
+	public static void line() {
+		System.out.println("--------------------------------");
+	}
+
+}

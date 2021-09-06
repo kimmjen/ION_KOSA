@@ -1,0 +1,9 @@
+package ex02.array;
+
+public class MainEntry {
+	public static void main(String[] args) {
+		// 1.
+		int[][] a = new int[2][3]; // 행크기, 열크기
+		a[0][0] = 1; //초기화 작업
+	}
+}

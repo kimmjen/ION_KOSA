@@ -1,0 +1,10 @@
+package ex05.sort;
+
+public class SelectionSort {
+	public static void main(String[] args) {
+		int[] a = { 7, 3, 5, 2, 8};
+		int temp;
+		
+		System.out.println("--------sort전 출력--------");
+	}
+}

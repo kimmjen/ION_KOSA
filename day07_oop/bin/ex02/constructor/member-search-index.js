@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"ex02.constructor","c":"MainEntry","l":"main(String[])","u":"main(java.lang.String[])"},{"p":"ex02.constructor","c":"MainEntry","l":"MainEntry()","u":"%3Cinit%3E()"}];updateSearchResults();

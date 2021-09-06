@@ -1,0 +1,25 @@
+오늘 기본 설정( 교육용 PC ) 
+0.	chrome 설치.
+
+1.	jAVA 설치
+	A.	jdk 1.8 설치 
+		i.	https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html 
+	B.	환경 변수 설정 
+		i.	내 pc >> 속성 >> 고급 시스템 정보 >> JAVA_HOME 등록
+		ii.	>> Path 클릭 >> %JAVA_HOME%/bin >> 추가
+		iii.	Cmd 에서 java -version 확인. 
+
+2.	sts 설치.( https://spring.io/tools )
+	A.	help >> 마켓 플레이스 >> 검색 : add on >> eclipse 3 for 4 설치. (spring 사용)
+	B.	Help >> install new software >> https://download.eclipse.org/release/2020-12/
+		i.	web이랑 eclipse 들어간거 설치. (java ee 사용)
+
+3.	sts 한글화 작업 (문자 포맷이 달라서 인코딩시 에러날 수 있음.)
+	A.	Window >> Preferences >> General >> Content Types >> TEXT >> html, css, javascript, java Properties , java source file, JSP >> Default encoding : UTF-8 디폴트값을 update
+	B.	Web >> JSP Files >> UTF-8 도 가능하지만 교수님은 위 방식을 사용함.
+
+4.	sts 글꼴 작업 (영어, 숫자, 한글 구분 쉽게)
+	A.	Window >> Preferences >> Appearance >> colors and Font >> Basic >> Text Font >> 교수님은 맑은 고딕으로 설정.
+
+
+write by. 이상옥
