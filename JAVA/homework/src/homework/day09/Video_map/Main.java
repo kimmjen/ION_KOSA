@@ -14,10 +14,14 @@ public class Main {
         try {
             int num;
             while (true) {
-                do {
-                    System.out.print("원하는 작업의 번호 입력 (1 ~ 7) : ");
-                    num = sc.nextInt();
-                } while (num < 1 || num > 7);
+                // do {} while 구문 사용하지 말기
+                System.out.print("원하는 작업의 번호 입력 (1 ~ 7) : ");
+                num = sc.nextInt();
+                if (num < 1 || num > 7) {
+                    System.out.println("잘못 입력하셨습니다.");
+                    continue;
+                }
+
 
                 switch (num) {
                     case 1:

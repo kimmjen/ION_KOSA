@@ -21,17 +21,38 @@ public class VideoManager {
         System.out.print("비디오 장르 : ");
         category = sc.next();
 
-        if (!videomap.containsKey(title)) {
-            videomap.put(title, new ArrayList<Video>());
-        }
+        // 1. 
+        // if (!videomap.containsKey(title)) {
+        //     videomap.put(title, new ArrayList<Video>());
+        // }
 
-        ArrayList<Video> video = videomap.get(title);
+        // ArrayList<Video> video = videomap.get(title);
 
-        if (video.add(new Video(title, category))) {
-            System.out.println("비디오 추가 성공");
-        } else {
-            System.out.println("비디오 추가 실패");
-        }
+        // if (video.add(new Video(title, category))) {
+        //     System.out.println("비디오 추가 성공");
+        // } else {
+        //     System.out.println("비디오 추가 실패");
+        // }
+        // 2.
+        // Video video = new Video(title, category);
+
+        // ArrayList<Video> videos = new ArrayList<>();
+        // if (videomap.containsKey(title)) {
+        //     videos = videomap.get(title);
+        // }
+
+        // videos.add(video);
+        // videomap.put(title, videos);
+        // 3.
+        // Video video = new Video(title, category);
+        // ArrayList<Video> videos = videomap.getOrDefault(title, new ArrayList<>());
+        // videos.add(video);
+        // videomap.put(title, videos);
+        // 4.
+        Video video = new Video(title, category);
+        ArrayList<Video> videos = videomap.getOrDefault(title, new ArrayList<>());
+        videos.add(new Video(title, category));
+        videomap.put(title, category);
     }
 
     // 2. 비디오 삭제
@@ -44,27 +65,47 @@ public class VideoManager {
         System.out.print("비디오 제목 : ");
         title = sc.next();
 
+        // 1.
+        // if (!videomap.containsKey(title)) {
+        //     System.out.println("해당 비디오가 없습니다.");
+        // } else {
+        //     ArrayList<Video> video = videomap.get(title);
+
+        //     for (int i = 0; i < video.size(); i++) {
+
+        //         if (video.get(i).isRent()) {
+
+        //             count++;
+        //         } else {
+        //             System.out.println(video.get(i).getRentName() + "님이 대여하신 비디오가 있습니다.");
+        //             flag = false;
+        //         }
+        //     }
+
+        //     if (flag) {
+        //         video.clear();
+        //         videomap.remove(title);
+        //         System.out.println("총 " + count + " 건의 비디오를 삭제했습니다.");
+        //     }
+        // }
+        // 2.
         if (!videomap.containsKey(title)) {
             System.out.println("해당 비디오가 없습니다.");
-        } else {
-            ArrayList<Video> video = videomap.get(title);
-
-            for (int i = 0; i < video.size(); i++) {
-
-                if (video.get(i).isRent()) {
-
-                    count++;
-                } else {
-                    System.out.println(video.get(i).getRentName() + "님이 대여하신 비디오가 있습니다.");
-                    flag = false;
-                }
+            return;
+        }
+        ArrayList<Video> video = videomap.get(title);
+        for (Video value : video) {
+            if (value.isRent()) {
+                count++;
+            } else {
+                System.out.println(video.get(i).getRentName() + "님이 대여하신 비디오가 있습니다.");
+                flag = false;
             }
-
-            if (flag) {
-                video.clear();
-                videomap.remove(title);
-                System.out.println("총 " + count + " 건의 비디오를 삭제했습니다.");
-            }
+        }
+        if (flag) {
+            video.clear();
+            videomap.remove(title);
+            System.out.println("총 " + count + " 건의 비디오를 삭제했습니다.");
         }
     }
 
@@ -73,19 +114,44 @@ public class VideoManager {
 
         System.out.println("\n비디오 리스트를 출력합니다.");
 
-        Iterator<String> keys = videomap.keySet().iterator();
+        //1. 코드 문제, Iterator 쓰지않는 것이 좋음
+        //Iterator<String> keys = videomap.keySet().iterator();
 
-        while (keys.hasNext()) {
+        // 
+        // while (keys.hasNext()) {
 
-            String title = keys.next();
-            ArrayList<Video> list = videomap.get(title);
+        //     String title = keys.next();
+        //     ArrayList<Video> list = videomap.get(title);
 
-            System.out.println("[" + title + "] 비디오 목록");
+        //     System.out.println("[" + title + "] 비디오 목록");
+               // index 더 간편하게
+        //     for (int i = 0; i < list.size(); i++) {
 
-            for (int i = 0; i < list.size(); i++) {
+        //         System.out.println((i + 1) + " 번째 비디오");
+        //         System.out.println(list.get(i).toString() + "\n");
+        //     }
+        //     System.out.println();
+        // }
+        // 2.
+        // for(Map.Entry<String, ArrayList<Video>> entry : videomap.entrySet()) {
+        //     String title = entry.getKey();
+        //     ArrayList<Video> list = entry.getValue();
 
-                System.out.println((i + 1) + " 번째 비디오");
-                System.out.println(list.get(i).toString() + "\n");
+        //     int idx = 1;
+        //     // for each 구문 사용
+        //     for (Video video : list) {
+        //         System.out.println(idx + " 번째 비디오");
+        //         SYstem.out.println(video + "\n");
+        //     }
+        //     System.out.println();
+        // }
+        // 3. 
+        for (ArrayList<Video> list : videomap.values()) {
+
+            int idx = 1;
+            for (Video video : list) {
+                System.out.println(idx + " 번째 비디오");
+                SYstem.out.println(video + "\n");
             }
             System.out.println();
         }
