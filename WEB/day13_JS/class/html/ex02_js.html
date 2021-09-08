@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basic</title>
+    <script>
+        // Null
+        let empty = null;
+        console.log(empty);
+
+        // Object(객체 데이터)
+        // 여러 데이터를 Key:Value 형태로 저장한다. {}
+        let user = {
+            name: 'kingsmile',
+            age: 85,
+            isValid: true
+        };
+
+        console.log(user);
+        console.log(user.isValid);
+        console.log(user.name);
+
+        // Array(배열 데이터)
+        // 여러 데이터를 순차적으로 저장한다.
+        let fruits = ['Apple', 'Banana', 'Cherry'];
+        console.log(fruits[0]);
+        console.log(fruits[1]);
+        console.log(fruits[2]);
+
+        let a = 2;
+        let b = 5;
+        console.log(a * b);
+        console.log(a - b);
+        console.log(a / b);
+        console.log(a + b);
+
+        a = 12;
+        console.log(a);
+        a = 999;
+        console.log(a);
+
+        // 예약어
+        // let this = 'hoyoung'; // SyntaxError
+        // let if = 357;
+        // let break = true;
+
+        // 함수 : 특정동작(기능)을 수행하는 일부 코드의 집합(부분)
+        // function
+        function helloFunc() { // 기명(이름이 있는 함수)
+            // 실행코드
+            console.log('hello javascript!!');
+        }
+
+        // 함수 호출
+        helloFunc();
+
+        function returnFunc() {
+            return 300;
+        }
+
+        let su = returnFunc();
+        console.log(su);
+
+        console.log(returnFunc());
+
+        function sum(a, b) {
+            return a + b;
+        }
+
+        // 재사용
+        let x = sum(1, 2);
+        let y = sum(7, 12);
+        let z = sum(3, 20);
+        console.log(x, y, z);
+
+        // 기명 함수
+        function hello() {
+            console.log('Hello~~~');
+        }
+
+        // 익명 함수(이름이 없는 함수)
+        let world = function () {
+            console.log('world~~~');
+        }
+
+        hello();
+        world();
+
+        // 객체 데이터
+        const person = {
+            name: 'hoyoung',
+            age: 27,
+            // 메소드(Method)
+            getName: function () {
+                return this.name;
+            }
+        };
+
+        const himName = person.getName();
+        console.log(himName);
+        console.log(person.getName());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

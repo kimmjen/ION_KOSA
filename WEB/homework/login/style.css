@@ -1,0 +1,38 @@
+body{
+    margin-left: 80px;
+    margin-top: 80px;
+
+
+}
+form {
+    /* display: inline-block; */
+    text-align: center;
+}
+table{
+    border : 4px double black;
+    background-color: whitesmoke;
+    text-align: center;
+}
+td {
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+    border: 4px double black;
+    vertical-align: middle;
+    font-size: 15px;
+}
+input {}
+tr :nth-child(1){
+    vertical-align: middle;
+    text-align: center;
+}
+
+label{
+
+    color: black;
+}
+
+div{
+    
+    color: red;
+}

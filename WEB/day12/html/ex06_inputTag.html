@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/sub0907.css">
+</head>
+<body>
+    <form action="result.jsp" method="GET">
+
+        <label for="name">이름 : </label>
+        <input type="text" name="name" id="name" placeholder="입력요망">
+        <label for="pwd">비밀번호 : </label>
+        <input type="password" name="password" id="password" placeholder="비밀번호입력">
+        이름 : <input type="text" name="name" id="name" placeholder="이름"> <br>
+        비밀번호 : <input type="password" name="pwd" id="pwd" placeholder="비밀번호"> <br>
+        이메일 : <input type="email" name="email" id="pwd" placeholder="*@gmail.com"> <br>
+        범위 : <input type="range" min="0" max="100" value="50"> <span>50</span>% <br>
+        숫자 : <input type="number" max="100" min="0"><br>
+        검색 : <input type="search" placeholder="검색어를 입력하세요."><br>
+        연락처 : <input type="tel" placeholder="전화번호를 입력하세요."><br>
+        Time : <input type="time"> <br>
+        Date : <input type="datetime"><br>
+        Datetime-local :  <input type="datetime-local"><br>
+        파일 : <input type="file"><br><br>
+        이미지 : <input type="image" width="300" height="100" src="../"> <br><br>
+        색상 : <input type="color"> <br>
+        주 : <input type="week">
+
+        취미 : 
+            독서 <input type="checkbox" name="body" value="check1"> 
+            음악감상 <input type="checkbox" name="body" value="check2"> 
+            게임 <input type="checkbox" name="body" value="check3"> 
+            등산 <input type="checkbox" name="body" value="check4"> 
+            <br>
+        
+        성별 : 
+            <input type="radio" name="gender" value="F"> 여자
+            <input type="radio" name="gender" value="M" checked> 남자
+            <br>
+        직업 :
+            <!-- <select size="3" multiple> -->
+            <select>
+                <option value="opt1">선택하세요</option>
+                <option value="opt1">회사원</option>
+                <option value="opt1">대표</option>
+                <option value="opt1">개발자</option>
+                <option value="opt1">운동선수</option>
+            </select>
+            <br><br>
+
+            <textarea name="text" id="txt" cols="50" rows="5"></textarea><br><br>
+
+            <button type="button" class="btn btn-green"></button>&nbsp;
+            <button type="button" class="btn btn-danger"></button>
+    </form>
+</body>
+</html>

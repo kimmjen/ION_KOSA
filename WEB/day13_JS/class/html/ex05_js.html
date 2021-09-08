@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script type="module" src="../js/sub.js"></script> -->
+    <style>
+        p.strChange {
+            color: red;
+        }
+    </style>
+    <script defer>
+        function aa() {
+            // let irum = document.getElementById('name');
+            // alert(irum);
+            // console.log(irum);
+            let irum = '김연아';
+            document.getElementById('valueInput').innerHTML = irum;
+            document.getElementById('name3').value = document.getElementById('name2').value;
+        }
+
+        document.write('<font color="blue" size="5">javascript를 이용한 출력입니다.</font>');
+
+        const hello = function () {
+            alert("hello!!!");
+        }
+    </script>
+</head>
+
+<!-- <body onload="hello()"> -->
+
+<body onload="javascript:alert('궁금해');">
+    <h1>Hello World!!</h1>
+    <div class="red" onclick="javascript:alert('빨강');">Red</div><br>
+    <button onclick="aa();">red</button><br>
+    <div id="valueInput"></div>
+    <input type="text" id="name2" value="강감찬">
+    <input type="text" id="name3" value="name3">
+    <hr>
+    <p class="strChange">HTML 문서 내에 기재된 텍스트입니다.</p>
+</body>
+
+</html>

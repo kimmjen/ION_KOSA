@@ -1,0 +1,45 @@
+body {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+header {
+    text-align: center;
+}
+.table1 {
+    border: 1px;
+    width: 700px;
+    height: 450px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.table2 {
+    border: 1px;
+    width: 700px;
+    height: 250px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    font-weight: 700;
+
+}
+
+#holi {
+    color: red;
+}
+
+img {
+    width: 980px;
+    height: 360px;
+    /* margin: auto; */
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.go {
+    background-color: steelblue;
+}

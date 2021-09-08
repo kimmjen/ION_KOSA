@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 문법2</title>
+    <script>
+        // null
+        let empty = null;
+        console.log(empty);
+        // 객체 ojbect
+        // 여러개 데이터를 key, value , 값을 담는 브라켓 : {}
+        let user = {
+            name: 'test',
+            age: 100,
+            isValid : true
+        }
+        console.log(user);
+        
+        // Array(배열 데이터)
+        // 여러 데이터를 순차적으로 저장, 대괄호 사용
+        let fruits = ['Apple', 'Banana', 'Cherry']
+        console.log(fruits[0]);
+        console.log(fruits[1]);
+        console.log(fruits[2]);
+
+        let a = 2;
+        let b = 5;
+
+        console.log(`a X b = ${a*b}`)
+        console.log(`a - b = ${a-b}`)
+        console.log(`a / b = ${a/b}`)
+        console.log(`a + b = ${a+b}`)
+
+        a = 12;
+        console.log(a);
+        a = 999;
+        console.log(a);
+
+        // 예약어
+        // let this = 9; SysntaxError
+
+        // 함수  : 특정 동작(기능)을 수행하는 일부 코드의 집합(부분)
+        // function
+        function helloFunc() {
+            // 실행 코드
+            console.log('Hello javascript');
+        }
+        // 함수호출
+        helloFunc();
+        
+        function returnFunc() {
+            return 300;
+        }
+        let su = returnFunc();
+        console.log(su);
+        console.log(returnFunc());
+
+        // 기명 함수
+        function sum(a, b) {
+            return a+b;
+        }
+        // 재사용
+        let x = sum(1,2);
+        let y = sum(7, 12);
+        let z = sum (3, 20);
+        console.log(x, y, z);
+
+        // 기명 함수
+        function hello() {
+            console.log('Hello!!!!');
+        }
+
+        //익명(이름이없는) 함수
+        let world = function () {
+            console.log('World');
+        }
+        // console.log(world);
+        hello();
+        world();
+
+        //객체 데이터
+        const person = {
+            name:'name',
+            age: 100,
+            // method,
+            getName: function() {
+                return this.name; //this
+            },
+            getAge: function() {
+                return this.age
+            }
+        };
+
+        const hername = person.getName();
+        console.log(hername);
+        console.log(person.getAge());
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onload event</title>
+    <script>
+        // window.onload = function () {
+        //     // alert("innerHTML : " + document.body.innerHTML + '\ninnerText : ' + document.body.innerText);
+        //     let list = '';
+        //     list += "<ul>";
+        //     list += "<li>Hello</li>";
+        //     list += "<li>Hi</li>";
+        //     list += "<li>Java</li>";
+        //     list += "</ul>";
+        //     document.body.innerHTML = list;
+        //     alert(list);
+        // };
+
+        // function countIncrease() {
+        //     let spanObj = document.querySelector('#countSpan');
+        //     spanObj.innerHTML = parseInt(spanObj.innerHTML) + 1;
+        // }
+
+        // document.querySelector('#id');
+        // document.querySelector('.className');
+        // document.querySelectorAll('.className');
+
+        // document.getElementById('id');
+        // document.getElementsByClassName('className');
+        // document.getElementsByName('name');
+        // document.getElementsByTagName('body');
+
+        function clickNumber(data) {
+            let monitor = document.getElementById("monitor");
+            // alert(data);
+
+            if (data == 'clear') {
+                monitor.value = '';
+            } else if (data != '=') {
+                monitor.value += data;
+            } else {
+                monitor.value = eval(monitor.value);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="monitor"><br>
+    <input type="button" value="1" onclick="clickNumber(this.value)">
+    <input type="button" value="2" onclick="clickNumber(this.value)">
+    <input type="button" value="3" onclick="clickNumber(this.value)">
+    <input type="button" value="+" onclick="clickNumber(this.value)">
+    <input type="button" value="-" onclick="clickNumber(this.value)">
+    <input type="button" value="=" onclick="clickNumber(this.value)">
+    <input type="button" value="clear" onclick="clickNumber(this.value)">
+
+    <hr>
+    Good!!!<br>
+    <h5>뭐든 미리 축하해요!! 모두 합격입니다.</h5>
+
+    <span id="countSpan">0</span> 번 클릭 &nbsp;&nbsp;&nbsp;
+    <input type="button" value="클릭" onclick="countIncrease()">
+    <input type="text" name="pwd">
+</body>
+
+</html>

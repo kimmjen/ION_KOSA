@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 문법</title>
+
+    <script>
+        let fruits = ['Apple', 'Banana', 'Cherry'];
+        console.log(fruits[0]);
+        console.log(fruits[1]);
+        console.log(fruits[2]);
+
+        let date = new Date();
+        console.log(date);
+
+        // 0 : 일요일, 1 : 월요일, ...
+        console.log(new Date('2021-09-08').getDay());
+        console.log(new Date('2021-09-10').getDay());
+        console.log(new Date('2021-09-11').getDay());
+
+        // 데이터 종류(자료형)
+        String
+        Number
+        Boolean
+        undefined
+        null
+        Object
+        Array
+
+        let b = 123;
+
+        const obj = {
+            name: 'hoyoung',
+            age: 33
+        }
+        const n = obj.name;
+        console.log(n);
+        console.log(obj.age);
+
+        function show(params) {
+            return params;
+        }
+
+        function show(args) {
+            console.log(args);
+        }
+
+        show('hello');
+        const fn = show(234);
+        console.log(fn);
+
+        let x = null; // 값이 없는 상태
+        let y; // undefined : 값이 할당되지 않은 상태
+        console.log(x);
+        console.log(y);
+
+        // String(문자데이터)
+        let myName = "hoyoung";
+        let email = 'the.hozero@gmail.com';
+        let msg = `hello ${myName}님!!!`;
+
+        console.log('내 이름은 ' + myName + '입니다.');
+        console.log(msg);
+        console.log(`당신의 메일주소는 ${email} 이군요`);
+
+        // Number(숫자 데이터)
+        let number = 800;
+        let opacity = 12.34;
+        console.log(number);
+        console.log(opacity);
+
+        let undef;
+        let ob = {
+            kbs: 1004,
+            nickname: 'hozero'
+        };
+
+        console.log(undef);
+        console.log(ob);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
