@@ -1,5 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="웹2">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/SPRING/sp01_springMVC/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/SPRING/sp01_springMVC/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="웹3">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/SPRING/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/SPRING/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="웹4">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/SPRING/Servers/Tomcat v9.0 Server at localhost-config/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/SPRING/Servers/Tomcat v9.0 Server at localhost-config" relative="/WEB-INF" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="웹5">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/SPRING/day18_web/webContext/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/SPRING/day18_web/webContext" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="웹6">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/SPRING/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/day18_web/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/SPRING/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/day18_web" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="웹7">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/SPRING/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/sp01_springMVC/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/SPRING/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/sp01_springMVC" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="웹">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/SPRING/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/conf/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/SPRING/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/conf" relative="/WEB-INF" />
+        </webroots>
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$" />
