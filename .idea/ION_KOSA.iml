@@ -71,6 +71,36 @@
         </webroots>
       </configuration>
     </facet>
+    <facet type="web" name="웹10">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/SPRING/sp02_springMVC/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/SPRING/sp02_springMVC/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="웹8">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/SPRING/day19_web/webContent/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/SPRING/day19_web/webContent" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="웹9">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/SPRING/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/K/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/SPRING/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/K" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
