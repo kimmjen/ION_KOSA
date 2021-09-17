@@ -58,7 +58,7 @@
 		<item value="org.eclipse.jst.ws.axis2tools.feature:1.1.401.v201909051708"/>
 		<item value="org.eclipse.jst.ws.cxf.feature:1.1.700.v202011292043"/>
 		<item value="org.eclipse.jst.ws.jaxws.feature:1.2.700.v202011292043"/>
-		<item value="org.eclipse.justj.openjdk.hotspot.jre.full:15.0.1.v20201027-0507"/>
+		<item value="org.eclipse.justj.openjdk.hotspot.jre.full:16.0.2.v20210721-1149"/>
 		<item value="org.eclipse.m2e.feature:1.18.1.20210618-2246"/>
 		<item value="org.eclipse.m2e.logback.feature:1.17.1.20210603-1006"/>
 		<item value="org.eclipse.m2e.wtp.feature:1.4.4.20201128-1705"/>
@@ -135,10 +135,12 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\workspace\ION_KOSA\SPRING\ex02_basic_di"/>
 			<item value="C:\workspace\ION_KOSA\JAVA\homework"/>
 			<item value="C:\workspace\ION_KOSA"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\workspace\ION_KOSA\SPRING\day20\ex01\pom.xml"/>
 			<item value=""/>
 		</list>
 	</section>
@@ -150,5 +152,7 @@
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
 			<item value="C:\ION_workspace\ION_KOSA"/>
 		</list>
+	</section>
+	<section name="NewWizardAction">
 	</section>
 </section>

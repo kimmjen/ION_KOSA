@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- appContext.xml -->
+	<bean id="cat3" class="ex03.MyCats">
+		<!-- <constructor-arg type="String" value="고양이"></constructor-arg>
+		<constructor-arg type="int" value="8"></constructor-arg> -->
+		<constructor-arg><value>고양이</value></constructor-arg>
+		<constructor-arg><value>8</value></constructor-arg>
+		<constructor-arg>
+			<list> <!-- 배열 경우에 사용  -->
+				<value>꾹꾹이1</value>
+				<value>꾹꾹이2</value>
+				<value>꾹꾹이3</value>
+			</list>
+		</constructor-arg>
+		
+		<property name="weight" value="3.5"></property>
+		<property name="color" value="gray"></property>
+	</bean>
+	
+	<!-- default 생성자 -->
+	<bean id="cats" class="ex03.Cats">
+		<constructor-arg><ref bean="cat3"/></constructor-arg>
+		
+	</bean>
+
+</beans>
