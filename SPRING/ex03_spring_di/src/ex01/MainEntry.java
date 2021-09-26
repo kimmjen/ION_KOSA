@@ -11,7 +11,7 @@ public class MainEntry {
 
 		
 		ApplicationContext context = 
-				new ClassPathXmlApplicationContext("ex01/di/ctx.xml");
+				new ClassPathXmlApplicationContext("ex01/ctx.xml");
 		
 //		MessageBeanImpl bean = (MessageBeanImpl)context.getBean("messageBeanImpl");
 		MessageBean bean = context.getBean("messageBeanImpl", MessageBeanImpl.class);
@@ -19,6 +19,14 @@ public class MainEntry {
 		
 		MessageBean bean2 = context.getBean("message", MessageBeanImpl.class);
 		bean2.sayHello();
+		
+		if (bean.hashCode() == bean2.hashCode())
+			System.out.println("true");
+		else System.out.println("false");
+		
+		System.out.println(
+				bean.hashCode() + ", " +
+				bean2.hashCode());
 	}
 }
 

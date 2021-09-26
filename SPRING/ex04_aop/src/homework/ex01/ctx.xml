@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+	<!-- 빈 객체 (p schema 사용) -->
+    <bean id="student" class="homework.ex01.Student" p:name="홍길동"
+		p:grade="6학년" p:group="6반" />
+	<bean id="worker" class="homework.ex01.Worker" p:name="홍길동"
+		p:dept="개발팀" p:grade="사원" />
+
+    <!--
+	<bean id="student" class="homework.ex01.Student">
+		<property name="name" value="홍길동"></property>
+		<property name="grade" value="6학년"></property>
+		<property name="group" value="6반"></property>
+	</bean>
+	<bean id="worker" class="homework.ex01.Worker">
+		<property name="name" value="홍길동"></property>
+		<property name="dept" value="개발팀"></property>
+		<property name="grade" value="사원"></property>
+	</bean>
+    -->
+
+	<!-- Advice -->
+	<bean id="logAdvice" class="homework.ex01.LogAdvice"></bean>
+
+	<!-- AOP -->
+	<aop:config>
+		<aop:pointcut
+			expression="execution(public void homework.ex01.*.*show(..))" id="pointCut" />
+		<aop:aspect id="aspect" ref="logAdvice">
+			<aop:around method="around" pointcut-ref="pointCut" />
+		</aop:aspect>
+	</aop:config>
+</beans>
