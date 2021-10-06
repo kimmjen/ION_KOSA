@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE 
+mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- mapper에는 MCL 명령어 처리 -->
+
+<mapper namespace="BoardDAO">
+
+	<select id="selectAll" resultType="board" parameterType="hashmap">
+	select *
+		from board
+		order by seq desc
+	</select>
+</mapper>
