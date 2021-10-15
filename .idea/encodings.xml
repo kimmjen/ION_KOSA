@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Vue/day01/src/App.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vue/day01/src/components/Card.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vue/day01/src/components/Discount.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vue/day01/src/components/Modal.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vue/day01/src/main.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vue/day02/src/assets/roomdata.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vue/day02/src/components/Discount.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vue/day02/src/components/Modal.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vue/day02/src/main.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vue/test/src/App.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vue/test/src/assets/roomdata.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vue/test/src/components/Card.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vue/test/src/components/Discount.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vue/test/src/components/Modal.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vue/test/src/main.js" charset="UTF-8" />
     <file url="PROJECT" charset="x-windows-949" />
   </component>
 </project>
