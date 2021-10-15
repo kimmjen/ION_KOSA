@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.20/18bcea7d5df4d49227b4a0743a536208ce4825bb/lombok-1.18.20.jar" />
+        </processorPath>
+        <module name="lombok.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="auto-configuration" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="emp" target="1.8" />
+      <module name="home" target="1.8" />
+      <module name="logback" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="RESTFul" options="-parameters" />
+      <module name="admin_client" options="-parameters" />
+      <module name="auto-configuration" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="emp" options="-parameters" />
+      <module name="home" options="-parameters" />
+      <module name="logback" options="-parameters" />
+    </option>
+  </component>
+</project>
